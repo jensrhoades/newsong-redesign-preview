@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NewSong Redesign — Two Directions</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Inter',system-ui,sans-serif;background:#201B22;color:#fff;line-height:1.6}
+  .wrap{max-width:1000px;margin:0 auto;padding:64px 24px}
+  h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(2.2rem,5vw,3.4rem);margin:0 0 .5rem;line-height:1.05}
+  .sub{color:rgba(255,255,255,.65);max-width:60ch;margin-bottom:48px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .card{background:#2b242d;border:1px solid rgba(255,255,255,.1);border-radius:8px;overflow:hidden;transition:transform .2s,border-color .2s}
+  .card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.28)}
+  .card .body{padding:26px}
+  .tag{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+  .a .tag{color:#C9A96A}.b .tag{color:#B98A5C}
+  h2{font-family:'Fraunces',serif;font-weight:600;font-size:1.5rem;margin:.4rem 0 .5rem}
+  .card p{color:rgba(255,255,255,.66);font-size:.95rem}
+  .links{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+  .links a{flex:1;text-align:center;padding:.7rem 1rem;border-radius:5px;font-weight:600;font-size:.88rem;text-decoration:none;transition:all .2s;min-width:120px}
+  .a .primary{background:#B08D57;color:#fff}.a .primary:hover{background:#4A3B52}
+  .b .primary{background:#9C6B3F;color:#fff}.b .primary:hover{background:#232021}
+  .ghost{border:1px solid rgba(255,255,255,.3);color:#fff}.ghost:hover{background:rgba(255,255,255,.12)}
+  .swatches{display:flex;gap:6px;margin-top:16px}
+  .sw{width:26px;height:26px;border-radius:50%;border:1px solid rgba(255,255,255,.2)}
+  .note{margin-top:44px;font-size:.85rem;color:rgba(255,255,255,.45);border-top:1px solid rgba(255,255,255,.1);padding-top:20px}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>NewSong Renovations — Redesign Directions</h1>
+  <p class="sub">Two takes on a rebuild, both photography-forward and built to let the actual project work shine. Open each and use the pill switcher (top-right) to jump between home and a service template.</p>
+  <div class="grid">
+    <div class="card a">
+      <div class="body">
+        <span class="tag">Direction A</span>
+        <h2>Warm Editorial</h2>
+        <p>Evolves the current brand: aubergine matured, yellow softened to warm brass, photography freed from the plum haze. Fraunces serif + Inter. Feels like the brand grown up.</p>
+        <div class="swatches"><span class="sw" style="background:#4A3B52"></span><span class="sw" style="background:#B08D57"></span><span class="sw" style="background:#FAF7F2"></span><span class="sw" style="background:#2E262F"></span></div>
+        <div class="links">
+          <a class="primary" href="a-index.html">Home</a>
+          <a class="ghost" href="a-kitchens.html">Service page</a>
+        </div>
+      </div>
+    </div>
+    <div class="card b">
+      <div class="body">
+        <span class="tag">Direction B</span>
+        <h2>Modern Craft</h2>
+        <p>A bigger move: charcoal and warm oak, heritage plum kept as a small accent. Full-bleed editorial photography, Cormorant serif + Source Sans. Reads like a high-end design-build firm.</p>
+        <div class="swatches"><span class="sw" style="background:#232021"></span><span class="sw" style="background:#9C6B3F"></span><span class="sw" style="background:#5E4B63"></span><span class="sw" style="background:#F4F1EC"></span></div>
+        <div class="links">
+          <a class="primary" href="b-index.html">Home</a>
+          <a class="ghost" href="b-kitchens.html">Service page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="note">Project photos are temporary stand-ins for review. Production build swaps every image slot for NewSong's own gallery photography (already on their server), and the whole thing ports to Hugo. Copy still needs a proofing pass with you.</p>
+</div>
+</body>
+</html>
