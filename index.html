@@ -3,64 +3,384 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NewSong Redesign — Two Directions</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<title>NewSong Renovations — Direction C: Faithful Refresh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
+  :root{
+    --plum:#594A5F;        /* current-site plum */
+    --plum-dark:#3E3343;   /* deepened for footer/scrims */
+    --plum-deep:#1D181F;   /* near-black */
+    --yellow:#EED82C;      /* current chartreuse CTA */
+    --yellow-ink:#2E2A0E;  /* readable text on yellow */
+    --magenta:#CC3366;     /* accent from brand palette, used sparingly */
+    --paper:#FFFFFF;
+    --wash:#F6F4F7;        /* faint plum-tinted off-white */
+    --line:#E4DEE7;
+    --text:#2A2430;
+    --muted:#6E6473;
+    --maxw:1180px;
+  }
   *{box-sizing:border-box}
-  body{margin:0;font-family:'Inter',system-ui,sans-serif;background:#201B22;color:#fff;line-height:1.6}
-  .wrap{max-width:1000px;margin:0 auto;padding:64px 24px}
-  h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(2.2rem,5vw,3.4rem);margin:0 0 .5rem;line-height:1.05}
-  .sub{color:rgba(255,255,255,.65);max-width:60ch;margin-bottom:48px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-  .card{background:#2b242d;border:1px solid rgba(255,255,255,.1);border-radius:8px;overflow:hidden;transition:transform .2s,border-color .2s}
-  .card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.28)}
-  .card .body{padding:26px}
-  .tag{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
-  .a .tag{color:#C9A96A}.b .tag{color:#B98A5C}
-  h2{font-family:'Fraunces',serif;font-weight:600;font-size:1.5rem;margin:.4rem 0 .5rem}
-  .card p{color:rgba(255,255,255,.66);font-size:.95rem}
-  .links{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
-  .links a{flex:1;text-align:center;padding:.7rem 1rem;border-radius:5px;font-weight:600;font-size:.88rem;text-decoration:none;transition:all .2s;min-width:120px}
-  .a .primary{background:#B08D57;color:#fff}.a .primary:hover{background:#4A3B52}
-  .b .primary{background:#9C6B3F;color:#fff}.b .primary:hover{background:#232021}
-  .ghost{border:1px solid rgba(255,255,255,.3);color:#fff}.ghost:hover{background:rgba(255,255,255,.12)}
-  .swatches{display:flex;gap:6px;margin-top:16px}
-  .sw{width:26px;height:26px;border-radius:50%;border:1px solid rgba(255,255,255,.2)}
-  .note{margin-top:44px;font-size:.85rem;color:rgba(255,255,255,.45);border-top:1px solid rgba(255,255,255,.1);padding-top:20px}
-  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Roboto',system-ui,sans-serif;color:var(--text);background:var(--paper);font-size:17px;line-height:1.65}
+  h1,h2,h3,h4{font-family:'Bree Serif',Georgia,serif;font-weight:400;line-height:1.15;margin:0;color:var(--plum)}
+  h1{font-size:clamp(2.3rem,5vw,3.6rem)}
+  h2{font-size:clamp(1.8rem,3.4vw,2.6rem)}
+  h3{font-size:1.3rem}
+  p{margin:0 0 1rem}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.95rem;padding:.9rem 1.7rem;border-radius:4px;cursor:pointer;transition:all .2s;border:2px solid transparent;font-family:'Roboto'}
+  .btn-yellow{background:var(--yellow);color:var(--yellow-ink)}
+  .btn-yellow:hover{background:#f7e64a;transform:translateY(-1px)}
+  .btn-plum{background:var(--plum);color:#fff}
+  .btn-plum:hover{background:var(--plum-dark)}
+  .btn-outline{border-color:#fff;color:#fff}
+  .btn-outline:hover{background:#fff;color:var(--plum)}
+  .btn-outline-plum{border-color:var(--plum);color:var(--plum)}
+  .btn-outline-plum:hover{background:var(--plum);color:#fff}
+
+  /* top bar */
+  .topbar{background:var(--plum-deep);color:rgba(255,255,255,.85);font-size:.85rem}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:38px}
+  .topbar a{color:rgba(255,255,255,.85)}
+  .topbar .tb-right{display:flex;gap:1.4rem;align-items:center}
+  .topbar .star{color:var(--yellow)}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 12px rgba(89,74,95,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:80px}
+  .brand{display:flex;align-items:center;gap:.7rem;font-family:'Bree Serif';font-size:1.5rem;color:var(--plum)}
+  .navlinks{display:flex;gap:1.9rem;font-weight:500;font-size:.98rem}
+  .navlinks a{color:var(--text);padding:.3rem 0;border-bottom:2px solid transparent;transition:border-color .2s}
+  .navlinks a:hover{border-color:var(--yellow)}
+  .navcta{display:flex;align-items:center;gap:1rem}
+  .navphone{font-family:'Bree Serif';color:var(--plum);font-size:1.2rem}
+
+  /* hero */
+  .hero{position:relative;color:#fff;overflow:hidden}
+  .hero-img{position:absolute;inset:0}
+  .hero-img img{width:100%;height:100%;object-fit:cover}
+  .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(89,74,95,.92) 0%,rgba(89,74,95,.75) 45%,rgba(89,74,95,.45) 100%)}
+  .hero .wrap{position:relative;z-index:2;padding:96px 24px 120px}
+  .hero h1{color:#fff;max-width:18ch}
+  .hero .lead{max-width:48ch;font-size:1.15rem;color:rgba(255,255,255,.94);margin:1.1rem 0 1.8rem}
+  .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+  .hero-rating{display:inline-flex;align-items:center;gap:.5rem;background:rgba(29,24,31,.35);padding:.4rem .9rem;border-radius:100px;font-size:.88rem;margin-bottom:1.3rem;font-weight:500}
+  .hero-rating .stars{color:var(--yellow);letter-spacing:1px}
+
+  /* quick-link cards overlapping hero (signature of current site) */
+  .quicklinks{margin-top:-64px;position:relative;z-index:5}
+  .ql-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .ql{background:var(--plum);color:#fff;border-radius:6px;overflow:hidden;box-shadow:0 14px 34px rgba(89,74,95,.28);transition:transform .2s}
+  .ql:hover{transform:translateY(-4px)}
+  .ql-img{height:120px;position:relative}
+  .ql-img img{width:100%;height:100%;object-fit:cover}
+  .ql-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(89,74,95,.1),rgba(89,74,95,.65))}
+  .ql-body{padding:18px 20px 22px}
+  .ql-body h3{color:#fff;font-size:1.2rem;margin-bottom:.3rem}
+  .ql-body p{color:rgba(255,255,255,.8);font-size:.9rem;margin:0}
+  .ql-body .go{color:var(--yellow);font-weight:700;font-size:.85rem;margin-top:.7rem;display:inline-block}
+
+  section{padding:84px 0}
+  .center{text-align:center}
+  .kicker{display:inline-block;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:var(--magenta);margin-bottom:.6rem}
+  .sec-title{margin-bottom:.7rem}
+  .sec-sub{color:var(--muted);max-width:60ch}
+  .center .sec-sub{margin-left:auto;margin-right:auto}
+
+  /* intro split (white band) */
+  .intro .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .intro-img{border-radius:6px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 16px 40px rgba(89,74,95,.15)}
+  .intro-img img{width:100%;height:100%;object-fit:cover}
+  .intro ul{list-style:none;padding:0;margin:1.2rem 0 1.6rem}
+  .intro li{display:flex;gap:.7rem;align-items:flex-start;padding:.4rem 0}
+  .intro li .tick{flex:none;width:22px;height:22px;border-radius:50%;background:var(--yellow);color:var(--yellow-ink);display:grid;place-items:center;font-size:.8rem;font-weight:700;margin-top:2px}
+
+  /* services band (plum) */
+  .services{background:var(--plum)}
+  .services .kicker{color:var(--yellow)}
+  .services h2,.services .sec-sub{color:#fff}
+  .services .sec-sub{opacity:.85}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .svc-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:28px 24px;transition:background .2s}
+  .svc-card:hover{background:rgba(255,255,255,.12)}
+  .svc-card .ico{width:48px;height:48px;border-radius:8px;background:var(--yellow);display:grid;place-items:center;margin-bottom:16px}
+  .svc-card h3{color:#fff}
+  .svc-card p{color:rgba(255,255,255,.78);font-size:.95rem;margin:.4rem 0 0}
+
+  /* photo band with yellow callout (alternating rhythm from old site) */
+  .showcase{background:var(--wash)}
+  .showcase .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:0;align-items:stretch;border-radius:8px;overflow:hidden;box-shadow:0 16px 40px rgba(89,74,95,.12)}
+  .showcase .pic{min-height:420px;position:relative}
+  .showcase .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .showcase .txt{background:var(--yellow);color:var(--yellow-ink);padding:56px 48px;display:flex;flex-direction:column;justify-content:center}
+  .showcase .txt h2{color:var(--plum-deep)}
+  .showcase .txt p{color:#4a4418}
+  .showcase .txt .btn{align-self:flex-start;margin-top:.6rem}
+
+  /* stats strip */
+  .stats{background:var(--plum-deep)}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:44px 24px}
+  .stat{text-align:center;color:#fff}
+  .stat b{font-family:'Bree Serif';font-size:2.4rem;color:var(--yellow);display:block;line-height:1}
+  .stat span{font-size:.85rem;color:rgba(255,255,255,.75)}
+
+  /* testimonials */
+  .tstm{background:#fff}
+  .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .tcard{background:var(--wash);border-radius:6px;padding:28px 26px;border-top:4px solid var(--yellow)}
+  .tcard .stars{color:var(--yellow);letter-spacing:1px}
+  .tcard p{margin:.8rem 0 1.1rem;font-size:.98rem}
+  .tcard .who{font-weight:700;color:var(--plum)}
+  .tcard .who small{color:var(--muted);font-weight:400;display:block;font-size:.8rem}
+
+  /* faq */
+  .faq{background:var(--wash)}
+  .faq .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px}
+  details{background:#fff;border:1px solid var(--line);border-radius:6px;margin-bottom:12px;overflow:hidden}
+  summary{cursor:pointer;list-style:none;padding:18px 22px;font-family:'Bree Serif';font-size:1.1rem;color:var(--plum);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--yellow-ink);background:var(--yellow);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:1.1rem;flex:none}
+  details[open] summary::after{content:"–"}
+  details .ans{padding:0 22px 18px;color:var(--muted)}
+
+  /* CTA */
+  .cta{position:relative;color:#fff;text-align:center;overflow:hidden}
+  .cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .cta::after{content:"";position:absolute;inset:0;background:rgba(89,74,95,.9)}
+  .cta .wrap{position:relative;z-index:2;padding:92px 24px}
+  .cta h2{color:#fff;max-width:22ch;margin:0 auto 1rem}
+  .cta p{color:rgba(255,255,255,.9);max-width:46ch;margin:0 auto 1.8rem}
+
+  /* footer */
+  footer{background:var(--plum-deep);color:rgba(255,255,255,.72);padding:60px 0 28px}
+  .fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:38px}
+  footer h4{color:#fff;font-size:1.05rem;margin-bottom:1rem}
+  footer a{display:block;padding:.28rem 0;color:rgba(255,255,255,.72)}
+  footer a:hover{color:var(--yellow)}
+  .fbrand{display:flex;align-items:center;gap:.7rem;color:#fff;font-family:'Bree Serif';font-size:1.4rem;margin-bottom:1rem}
+  .fphone{color:var(--yellow);font-family:'Bree Serif';font-size:1.5rem}
+  .fbot{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:22px;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+
+  .switcher{position:fixed;right:16px;top:92px;z-index:99;background:var(--plum);color:#fff;border-radius:100px;padding:6px;display:flex;gap:4px;box-shadow:0 10px 30px rgba(0,0,0,.3);font-size:.8rem;font-weight:700}
+  .switcher a{padding:8px 15px;border-radius:100px}
+  .switcher a.on{background:var(--yellow);color:var(--yellow-ink)}
+
+  @media(max-width:900px){
+    .topbar .tb-left{display:none}
+    .navlinks{display:none}
+    .ql-grid{grid-template-columns:1fr 1fr}
+    .intro .wrap,.faq .wrap{grid-template-columns:1fr;gap:32px}
+    .svc-grid,.tgrid{grid-template-columns:1fr}
+    .showcase .wrap{grid-template-columns:1fr}
+    .showcase .pic{min-height:280px}
+    .stats .wrap{grid-template-columns:1fr 1fr;gap:28px}
+    .fgrid{grid-template-columns:1fr 1fr}
+    section{padding:60px 0}
+    .quicklinks{margin-top:32px}
+  }
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>NewSong Renovations — Redesign Directions</h1>
-  <p class="sub">Two takes on a rebuild, both photography-forward and built to let the actual project work shine. Open each and use the pill switcher (top-right) to jump between home and a service template.</p>
-  <div class="grid">
-    <div class="card a">
-      <div class="body">
-        <span class="tag">Direction A</span>
-        <h2>Warm Editorial</h2>
-        <p>Evolves the current brand: aubergine matured, yellow softened to warm brass, photography freed from the plum haze. Fraunces serif + Inter. Feels like the brand grown up.</p>
-        <div class="swatches"><span class="sw" style="background:#4A3B52"></span><span class="sw" style="background:#B08D57"></span><span class="sw" style="background:#FAF7F2"></span><span class="sw" style="background:#2E262F"></span></div>
-        <div class="links">
-          <a class="primary" href="a-index.html">Home</a>
-          <a class="ghost" href="a-kitchens.html">Service page</a>
-        </div>
-      </div>
-    </div>
-    <div class="card b">
-      <div class="body">
-        <span class="tag">Direction B</span>
-        <h2>Modern Craft</h2>
-        <p>A bigger move: charcoal and warm oak, heritage plum kept as a small accent. Full-bleed editorial photography, Cormorant serif + Source Sans. Reads like a high-end design-build firm.</p>
-        <div class="swatches"><span class="sw" style="background:#232021"></span><span class="sw" style="background:#9C6B3F"></span><span class="sw" style="background:#5E4B63"></span><span class="sw" style="background:#F4F1EC"></span></div>
-        <div class="links">
-          <a class="primary" href="b-index.html">Home</a>
-          <a class="ghost" href="b-kitchens.html">Service page</a>
-        </div>
-      </div>
+
+<div class="switcher">
+  <a href="index.html" class="on">C · Home</a>
+  <a href="kitchens.html">C · Service</a>
+</div>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left"><span class="star">★</span> Serving Intown Atlanta &amp; the North Georgia Mountains</div>
+    <div class="tb-right">
+      <span><span class="star">★★★★★</span> 130+ Google reviews</span>
+      <a href="tel:6783252436">678-325-2436</a>
     </div>
   </div>
-  <p class="note">Project photos are temporary stand-ins for review. Production build swaps every image slot for NewSong's own gallery photography (already on their server), and the whole thing ports to Hugo. Copy still needs a proofing pass with you.</p>
 </div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 40 44" fill="none" width="38" height="42"><path d="M20 1 37 11v22L20 43 3 33V11z" fill="#594A5F"/><path d="M20 16c-2-3-7-2-7 2 0 3 4 5 7 8 3-3 7-5 7-8 0-4-5-5-7-2z" fill="#EED82C"/></svg>
+      NewSong
+    </a>
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#about">About</a>
+      <a href="#areas">Service Areas</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="navcta">
+      <span class="navphone">678-325-2436</span>
+      <a class="btn btn-yellow" href="#contact">Schedule a Call</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-img"><img src="images/hero-exterior.jpg" alt="Historic Atlanta home renovated by NewSong"></div>
+  <div class="wrap">
+    <span class="hero-rating"><span class="stars">★★★★★</span> Rated 5.0 by Atlanta homeowners</span>
+    <h1>Turning Atlanta houses into homes for over 20 years.</h1>
+    <p class="lead">From historic in-town renovations to additions and whole-home transformations, NewSong brings craftsmanship and honest client care to every project.</p>
+    <div class="hero-actions">
+      <a class="btn btn-yellow" href="#contact">Schedule a Call</a>
+      <a class="btn btn-outline" href="#work">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK LINKS -->
+<div class="quicklinks">
+  <div class="wrap">
+    <div class="ql-grid">
+      <a class="ql" href="kitchens.html">
+        <div class="ql-img"><img src="images/card-kitchen.jpg" alt="Kitchens"></div>
+        <div class="ql-body"><h3>Kitchens</h3><p>Layouts and finishes built around how you live.</p><span class="go">Explore →</span></div>
+      </a>
+      <a class="ql" href="#">
+        <div class="ql-img"><img src="images/card-bathroom.jpg" alt="Bathrooms"></div>
+        <div class="ql-body"><h3>Bathrooms</h3><p>Spa-calm spaces, built to last.</p><span class="go">Explore →</span></div>
+      </a>
+      <a class="ql" href="#">
+        <div class="ql-img"><img src="images/card-wholehome.jpg" alt="Whole home"></div>
+        <div class="ql-body"><h3>Whole Home</h3><p>Additions and full renovations.</p><span class="go">Explore →</span></div>
+      </a>
+      <a class="ql" href="#">
+        <div class="ql-img"><img src="images/card-exterior.jpg" alt="Exteriors"></div>
+        <div class="ql-body"><h3>Exteriors</h3><p>Porches, siding, and curb appeal.</p><span class="go">Explore →</span></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro" id="about">
+  <div class="wrap">
+    <div class="intro-img"><img src="images/about.jpg" alt="A NewSong renovation"></div>
+    <div>
+      <span class="kicker">Who We Are</span>
+      <h2 class="sec-title">We treat your home like it's our own.</h2>
+      <p>NewSong Renovations is a licensed Georgia general contractor specializing in the in-town neighborhoods and historic homes of Atlanta. We handle design, permitting, and construction under one roof, so you always know where your project stands.</p>
+      <ul>
+        <li><span class="tick">✓</span> Historic homes are our specialty, Craftsman to Victorian</li>
+        <li><span class="tick">✓</span> Daily site updates and weekly homeowner reviews</li>
+        <li><span class="tick">✓</span> One-year written warranty on every project</li>
+      </ul>
+      <a class="btn btn-outline-plum" href="#">More About NewSong</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap center">
+    <span class="kicker">What We Do</span>
+    <h2 class="sec-title">From a single room to the whole house.</h2>
+    <p class="sec-sub">We take on the projects most remodelers won't, and finish on time and on budget.</p>
+    <div class="svc-grid" style="text-align:left">
+      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg></div><h3>Kitchens &amp; Baths</h3><p>The rooms your home revolves around, designed and built to fit your life.</p></div>
+      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg></div><h3>Whole Home &amp; Additions</h3><p>Second stories, gut renovations, and additions that respect the home's character.</p></div>
+      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M4 10v10h16V10l-8-6-8 6zm2 8v-7l6-4.5 6 4.5v7h-3v-5H9v5H6z"/></svg></div><h3>Historic Restorations</h3><p>Preserving original charm while modernizing the systems underneath.</p></div>
+      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M2 20h20v2H2v-2zm2-8h2v6H4v-6zm5 0h2v6H9v-6zm5 0h2v6h-2v-6zm5 0h2v6h-2v-6zM12 2 2 9h20L12 2z"/></svg></div><h3>Porches &amp; Exteriors</h3><p>Screened porches, decks, and siding that extend how you use your home.</p></div>
+      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3z"/></svg></div><h3>Basements &amp; ADUs</h3><p>Finished basements and accessory dwelling units that add real living space.</p></div>
+      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M20.7 7 12 2 3.3 7 12 12l8.7-5zM3 9v8l8 4.6V13L3 9zm18 0-8 4v8.6L21 17V9z"/></svg></div><h3>Design &amp; Build</h3><p>One team from first sketch to final walkthrough, with a fixed scope up front.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="showcase" id="work">
+  <div class="wrap">
+    <div class="pic"><img src="images/featured-project.jpg" alt="Featured NewSong renovation"></div>
+    <div class="txt">
+      <span class="kicker" style="color:var(--plum)">Featured Project</span>
+      <h2>A 1920s bungalow, brought back to life.</h2>
+      <p>Whole-house renovation in Virginia-Highland with a new screened porch, finished basement, and a kitchen opened to the living space. Delivered ahead of schedule and under budget.</p>
+      <a class="btn btn-plum" href="#">View the Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>20+</b><span>Years in Atlanta</span></div>
+    <div class="stat"><b>130+</b><span>Five-star reviews</span></div>
+    <div class="stat"><b>GA</b><span>Licensed GC</span></div>
+    <div class="stat"><b>1-yr</b><span>Written warranty</span></div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="tstm">
+  <div class="wrap center">
+    <span class="kicker">Reviews</span>
+    <h2 class="sec-title">What Atlanta homeowners say.</h2>
+    <div class="tgrid" style="text-align:left">
+      <div class="tcard"><div class="stars">★★★★★</div><p>“Extremely well managed and finished on time and, drumroll, under budget. If quality matters to you, I'd highly recommend NewSong.”</p><div class="who">Ryan Clancy<small>Google Review</small></div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>“David was on site nearly every day for six months and became like family. The quality standards were impeccable throughout.”</p><div class="who">Drake Springer<small>Google Review</small></div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>“Honesty and integrity are the first words that come to mind. They far exceeded our expectations on our 1907 Victorian.”</p><div class="who">Ingrid Ritter<small>Google Review</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Good to Know</span>
+      <h2 class="sec-title">Questions homeowners ask us.</h2>
+      <p class="sec-sub">Still wondering about something? A quick call sorts it out.</p>
+      <a class="btn btn-yellow" href="#contact" style="margin-top:1rem">Schedule a Call</a>
+    </div>
+    <div>
+      <details open><summary>What types of remodeling do you offer?</summary><div class="ans">Whole-house renovations, second-story additions, historic restorations, basements, ADUs, kitchens, baths, porches, and exterior work.</div></details>
+      <details><summary>How long does a typical remodel take?</summary><div class="ans">Most projects run 6–12 months depending on scope. We manage the schedule closely and keep you updated the whole way.</div></details>
+      <details><summary>Do you work on historic homes?</summary><div class="ans">It's what we're best at. Craftsman, Victorian, colonial, mid-century modern, we work on all of them.</div></details>
+      <details><summary>Do you pull permits?</summary><div class="ans">Yes. As a licensed Georgia general contractor, we pull all necessary permits with the local municipality or county.</div></details>
+      <details><summary>What about warranties?</summary><div class="ans">Every project carries a one-year written warranty on workmanship and products, excluding normal wear and tear.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <img src="images/cta-interior.jpg" alt="Atlanta home interior">
+  <div class="wrap">
+    <span class="kicker" style="color:var(--yellow)">Let's Talk</span>
+    <h2>Consult with our team about your Atlanta remodel.</h2>
+    <p>Schedule your appointment and take the first step toward a home that fits the way you live.</p>
+    <a class="btn btn-yellow" href="tel:6783252436">Schedule a Call · 678-325-2436</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="fbrand"><svg viewBox="0 0 40 44" fill="none" width="34" height="38"><path d="M20 1 37 11v22L20 43 3 33V11z" fill="#EED82C"/><path d="M20 16c-2-3-7-2-7 2 0 3 4 5 7 8 3-3 7-5 7-8 0-4-5-5-7-2z" fill="#594A5F"/></svg>NewSong</div>
+        <p style="max-width:32ch">Expert home renovation for intown Atlanta, the surrounding communities, and the North Georgia mountains.</p>
+      </div>
+      <div><h4>Explore</h4><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About</a><a href="#areas">Service Areas</a></div>
+      <div><h4>Services</h4><a href="kitchens.html">Kitchens</a><a href="#">Bathrooms</a><a href="#">Whole Home</a><a href="#">Exteriors</a></div>
+      <div>
+        <h4>Get in Touch</h4>
+        <a class="fphone" href="tel:6783252436">678-325-2436</a>
+        <p style="margin-top:.5rem">641 Schuyler Ave SE<br>Atlanta, GA 30312</p>
+      </div>
+    </div>
+    <div class="fbot"><span>© 2026 NewSong Renovations. All rights reserved.</span><span>Privacy Policy</span></div>
+  </div>
+</footer>
+
 </body>
 </html>
