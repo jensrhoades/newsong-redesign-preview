@@ -166,6 +166,15 @@
   .fphone{color:var(--yellow);font-family:'Bree Serif';font-size:1.5rem}
   .fbot{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:22px;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
 
+  /* real logo */
+  .brand img{height:38px;width:auto;display:block}
+  .fbrand img{height:34px;width:auto;display:block}
+
+  /* architectural-drawing fade on white sections (bg-26 asset) */
+  .arch-fade{position:relative}
+  .arch-fade::before{content:"";position:absolute;inset:0;background-image:url("images/bg-architectural.png");background-repeat:no-repeat;background-position:right center;background-size:cover;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 35%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 35%,#000 100%);opacity:.5;pointer-events:none}
+  .arch-fade > *{position:relative;z-index:1}
+
   .switcher{position:fixed;right:16px;top:92px;z-index:99;background:var(--plum);color:#fff;border-radius:100px;padding:6px;display:flex;gap:4px;box-shadow:0 10px 30px rgba(0,0,0,.3);font-size:.8rem;font-weight:700}
   .switcher a{padding:8px 15px;border-radius:100px}
   .switcher a.on{background:var(--yellow);color:var(--yellow-ink)}
@@ -206,8 +215,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html">
-      <svg viewBox="0 0 40 44" fill="none" width="38" height="42"><path d="M20 1 37 11v22L20 43 3 33V11z" fill="#594A5F"/><path d="M20 16c-2-3-7-2-7 2 0 3 4 5 7 8 3-3 7-5 7-8 0-4-5-5-7-2z" fill="#EED82C"/></svg>
-      NewSong
+      <img src="images/newsong-logo.png" alt="NewSong Renovations">
     </a>
     <nav class="navlinks">
       <a href="#services">Services</a>
@@ -225,7 +233,7 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-img"><img src="images/hero-exterior.jpg" alt="Historic Atlanta home renovated by NewSong"></div>
+  <div class="hero-img"><img src="images/newsong-our-work-exteriors-5.jpg" alt="Historic Atlanta home renovated by NewSong"></div>
   <div class="wrap">
     <span class="hero-rating"><span class="stars">★★★★★</span> Rated 5.0 by Atlanta homeowners</span>
     <h1>Turning Atlanta houses into homes for over 20 years.</h1>
@@ -242,19 +250,19 @@
   <div class="wrap">
     <div class="ql-grid">
       <a class="ql" href="kitchens.html">
-        <div class="ql-img"><img src="images/card-kitchen.jpg" alt="Kitchens"></div>
+        <div class="ql-img"><img src="images/newsong-our-work-kitchens-1.jpg" alt="Kitchens"></div>
         <div class="ql-body"><h3>Kitchens</h3><p>Layouts and finishes built around how you live.</p><span class="go">Explore →</span></div>
       </a>
       <a class="ql" href="#">
-        <div class="ql-img"><img src="images/card-bathroom.jpg" alt="Bathrooms"></div>
+        <div class="ql-img"><img src="images/newsong-our-work-bathrooms-4.jpg" alt="Bathrooms"></div>
         <div class="ql-body"><h3>Bathrooms</h3><p>Spa-calm spaces, built to last.</p><span class="go">Explore →</span></div>
       </a>
       <a class="ql" href="#">
-        <div class="ql-img"><img src="images/card-wholehome.jpg" alt="Whole home"></div>
+        <div class="ql-img"><img src="images/newsong-our-work-interiors-5.jpg" alt="Whole home"></div>
         <div class="ql-body"><h3>Whole Home</h3><p>Additions and full renovations.</p><span class="go">Explore →</span></div>
       </a>
       <a class="ql" href="#">
-        <div class="ql-img"><img src="images/card-exterior.jpg" alt="Exteriors"></div>
+        <div class="ql-img"><img src="images/newsong-our-work-exteriors-2.jpg" alt="Exteriors"></div>
         <div class="ql-body"><h3>Exteriors</h3><p>Porches, siding, and curb appeal.</p><span class="go">Explore →</span></div>
       </a>
     </div>
@@ -262,9 +270,9 @@
 </div>
 
 <!-- INTRO -->
-<section class="intro" id="about">
+<section class="intro arch-fade" id="about">
   <div class="wrap">
-    <div class="intro-img"><img src="images/about.jpg" alt="A NewSong renovation"></div>
+    <div class="intro-img"><img src="images/newsong-our-work-exteriors-7.jpg" alt="A NewSong renovation"></div>
     <div>
       <span class="kicker">Who We Are</span>
       <h2 class="sec-title">We treat your home like it's our own.</h2>
@@ -299,7 +307,7 @@
 <!-- SHOWCASE -->
 <section class="showcase" id="work">
   <div class="wrap">
-    <div class="pic"><img src="images/featured-project.jpg" alt="Featured NewSong renovation"></div>
+    <div class="pic"><img src="images/newsong-our-work-interiors-8.jpg" alt="Featured NewSong renovation"></div>
     <div class="txt">
       <span class="kicker" style="color:var(--plum)">Featured Project</span>
       <h2>A 1920s bungalow, brought back to life.</h2>
@@ -353,7 +361,7 @@
 
 <!-- CTA -->
 <section class="cta" id="contact">
-  <img src="images/cta-interior.jpg" alt="Atlanta home interior">
+  <img src="images/newsong-our-work-interiors-13.jpg" alt="Atlanta home interior">
   <div class="wrap">
     <span class="kicker" style="color:var(--yellow)">Let's Talk</span>
     <h2>Consult with our team about your Atlanta remodel.</h2>
@@ -367,7 +375,7 @@
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <div class="fbrand"><svg viewBox="0 0 40 44" fill="none" width="34" height="38"><path d="M20 1 37 11v22L20 43 3 33V11z" fill="#EED82C"/><path d="M20 16c-2-3-7-2-7 2 0 3 4 5 7 8 3-3 7-5 7-8 0-4-5-5-7-2z" fill="#594A5F"/></svg>NewSong</div>
+        <div class="fbrand"><img src="images/newsong-logo-light.png" alt="NewSong Renovations"></div>
         <p style="max-width:32ch">Expert home renovation for intown Atlanta, the surrounding communities, and the North Georgia mountains.</p>
       </div>
       <div><h4>Explore</h4><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About</a><a href="#areas">Service Areas</a></div>
