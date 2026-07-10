@@ -102,6 +102,13 @@
   .fbrand{display:flex;align-items:center;gap:.7rem;color:#fff;font-family:'Bree Serif';font-size:1.4rem;margin-bottom:1rem}
   .fphone{color:var(--yellow);font-family:'Bree Serif';font-size:1.5rem}
   .fbot{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:22px;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+  /* real logo */
+  .brand img{height:38px;width:auto;display:block}
+  .fbrand img{height:34px;width:auto;display:block}
+  /* architectural-drawing fade on white sections */
+  .arch-fade{position:relative}
+  .arch-fade::before{content:"";position:absolute;inset:0;background-image:url("images/bg-architectural.png");background-repeat:no-repeat;background-position:right center;background-size:cover;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 35%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 35%,#000 100%);opacity:.5;pointer-events:none}
+  .arch-fade > *{position:relative;z-index:1}
   .switcher{position:fixed;right:16px;top:92px;z-index:99;background:var(--plum);color:#fff;border-radius:100px;padding:6px;display:flex;gap:4px;box-shadow:0 10px 30px rgba(0,0,0,.3);font-size:.8rem;font-weight:700}
   .switcher a{padding:8px 15px;border-radius:100px}.switcher a.on{background:var(--yellow);color:var(--yellow-ink)}
   @media(max-width:900px){
@@ -136,8 +143,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html">
-      <svg viewBox="0 0 40 44" fill="none" width="38" height="42"><path d="M20 1 37 11v22L20 43 3 33V11z" fill="#594A5F"/><path d="M20 16c-2-3-7-2-7 2 0 3 4 5 7 8 3-3 7-5 7-8 0-4-5-5-7-2z" fill="#EED82C"/></svg>
-      NewSong
+      <img src="images/newsong-logo.png" alt="NewSong Renovations">
     </a>
     <nav class="navlinks">
       <a href="index.html#services">Services</a>
@@ -154,7 +160,7 @@
 
 <!-- HERO -->
 <section class="svc-hero">
-  <img class="bg" src="images/kitchen-hero.jpg" alt="Kitchen remodel by NewSong">
+  <img class="bg" src="images/newsong-our-work-kitchens-1.jpg" alt="Kitchen remodel by NewSong">
   <div class="wrap">
     <div class="crumb"><a href="index.html">Home</a> / <a href="index.html#services">Services</a> / Kitchens</div>
     <h1>Kitchen Remodeling in Atlanta</h1>
@@ -167,7 +173,7 @@
 </section>
 
 <!-- INTRO + RAIL -->
-<section class="intro">
+<section class="intro arch-fade">
   <div class="wrap">
     <div>
       <span class="kicker">Kitchen Renovations</span>
@@ -192,12 +198,12 @@
     <span class="kicker">Recent Kitchens</span>
     <h2>A look at our work.</h2>
     <div class="gg">
-      <a href="#"><img src="images/kitchen-gallery-1.jpg" alt="Kitchen"></a>
-      <a href="#"><img src="images/kitchen-gallery-2.jpg" alt="Kitchen"></a>
-      <a href="#"><img src="images/kitchen-gallery-3.jpg" alt="Kitchen"></a>
-      <a href="#"><img src="images/kitchen-gallery-4.jpg" alt="Interior"></a>
-      <a href="#"><img src="images/kitchen-gallery-5.jpg" alt="Interior"></a>
-      <a href="#"><img src="images/kitchen-gallery-6.jpg" alt="Bath"></a>
+      <a href="#"><img src="images/newsong-our-work-kitchens-2.jpg" alt="Kitchen"></a>
+      <a href="#"><img src="images/newsong-our-work-kitchens-3.jpg" alt="Kitchen"></a>
+      <a href="#"><img src="images/newsong-our-work-kitchens-4.jpg" alt="Kitchen"></a>
+      <a href="#"><img src="images/newsong-our-work-kitchens-5.jpg" alt="Interior"></a>
+      <a href="#"><img src="images/newsong-our-work-kitchens-7.jpg" alt="Interior"></a>
+      <a href="#"><img src="images/newsong-our-work-kitchens-9.jpg" alt="Bath"></a>
     </div>
   </div>
 </section>
@@ -249,7 +255,7 @@
 
 <!-- CTA -->
 <section class="cta">
-  <img src="images/cta-interior.jpg" alt="Atlanta home">
+  <img src="images/newsong-our-work-interiors-13.jpg" alt="Atlanta home">
   <div class="wrap">
     <span class="kicker" style="color:var(--yellow)">Ready When You Are</span>
     <h2>Let's design your new kitchen.</h2>
@@ -262,7 +268,7 @@
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <div class="fbrand"><svg viewBox="0 0 40 44" fill="none" width="34" height="38"><path d="M20 1 37 11v22L20 43 3 33V11z" fill="#EED82C"/><path d="M20 16c-2-3-7-2-7 2 0 3 4 5 7 8 3-3 7-5 7-8 0-4-5-5-7-2z" fill="#594A5F"/></svg>NewSong</div>
+        <div class="fbrand"><img src="images/newsong-logo-light.png" alt="NewSong Renovations"></div>
         <p style="max-width:32ch">Expert home renovation for intown Atlanta and the North Georgia mountains.</p>
       </div>
       <div><h4>Explore</h4><a href="index.html#services">Services</a><a href="index.html#work">Our Work</a><a href="index.html#about">About</a></div>
