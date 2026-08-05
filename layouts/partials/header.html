@@ -1,0 +1,29 @@
+{{ $home := site.Home.RelPermalink }}
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left"><span class="star">★</span> {{ .Site.Params.serviceArea }}</div>
+    <div class="tb-right">
+      <span><span class="star">★★★★★</span> {{ .Site.Params.rating }}</span>
+      <a href="tel:{{ .Site.Params.phoneHref }}">{{ .Site.Params.phone }}</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="{{ $home }}">
+      <img src="{{ "images/newsong-logo.png" | relURL }}" alt="NewSong Renovations">
+    </a>
+    <nav class="navlinks">
+      <a href="{{ $home }}#services">Services</a>
+      <a href="{{ $home }}#work">Our Work</a>
+      <a href="{{ $home }}#about">About</a>
+      <a href="{{ $home }}#areas">Service Areas</a>
+      <a href="{{ $home }}#faq">FAQ</a>
+    </nav>
+    <div class="navcta">
+      <span class="navphone">{{ .Site.Params.phone }}</span>
+      <a class="btn btn-yellow" href="{{ .Params.ctaAnchor | default "#contact" }}">Schedule a Call</a>
+    </div>
+  </div>
+</header>

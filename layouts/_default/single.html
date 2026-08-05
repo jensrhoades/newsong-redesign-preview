@@ -1,0 +1,104 @@
+{{ define "main" }}
+{{ $home := site.Home.RelPermalink }}
+<!-- HERO -->
+<section class="svc-hero">
+  <img class="bg" src="{{ .Params.heroImage | relURL }}" alt="{{ .Title }} by NewSong">
+  <div class="wrap">
+    <div class="crumb"><a href="{{ $home }}">Home</a> / <a href="{{ $home }}#services">Services</a> / {{ .Params.crumbLabel | default .Title }}</div>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.lead }}</p>
+    <div class="hr-actions">
+      <a class="btn btn-yellow" href="{{ .Params.ctaAnchor | default "#quote" }}">Schedule a Call</a>
+      <a class="btn btn-outline" href="#gallery">See the Gallery</a>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO + RAIL -->
+<section class="intro arch-fade">
+  <div class="wrap">
+    <div>
+      {{ with .Params.introKicker }}<span class="kicker">{{ . }}</span>{{ end }}
+      {{ with .Params.introHeading }}<h2>{{ . }}</h2>{{ end }}
+      {{ .Content }}
+    </div>
+    <aside id="quote">
+      <div class="rail">
+        <h3>Schedule a call</h3>
+        <p>{{ .Params.railText | default "Tell us about your project and we'll walk you through scope, timeline, and budget on a quick call." }}</p>
+        <a class="btn btn-yellow" href="tel:{{ .Site.Params.phoneHref }}">Call {{ .Site.Params.phone }}</a>
+        <span class="ph">or call {{ .Site.Params.phone }}</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- GALLERY -->
+{{ with .Params.gallery }}
+<section class="gal" id="gallery">
+  <div class="wrap">
+    <span class="kicker">{{ $.Params.galleryKicker | default "Recent Work" }}</span>
+    <h2>{{ $.Params.galleryHeading | default "A look at our work." }}</h2>
+    <div class="gg">
+      {{ range . }}
+      <a href="#"><img src="{{ . | relURL }}" alt="{{ $.Title }}"></a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="wrap">
+    <span class="kicker">How It Works</span>
+    <h2>A process built to keep you in control.</h2>
+    <div class="steps">
+      <div class="step"><h3>Consult</h3><p>We visit, listen, and learn how you want the space to work.</p></div>
+      <div class="step"><h3>Design</h3><p>We lock layout, finishes, and a fixed scope, no surprises later.</p></div>
+      <div class="step"><h3>Build</h3><p>Our crews execute with daily updates and weekly walkthroughs.</p></div>
+      <div class="step"><h3>Deliver</h3><p>Final walkthrough, punch list, and a one-year written warranty.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+{{ with .Params.faq }}
+<section class="faq">
+  <div class="wrap">
+    <div>
+      <span class="kicker">{{ $.Params.faqKicker | default "FAQ" }}</span>
+      <h2>{{ $.Params.faqHeading | default "Answers before you start." }}</h2>
+      <a class="btn btn-yellow" href="{{ $.Params.ctaAnchor | default "#quote" }}" style="margin-top:1rem">Schedule a Call</a>
+    </div>
+    <div>
+      {{ range $i, $item := . }}
+      <details{{ if eq $i 0 }} open{{ end }}><summary>{{ $item.q }}</summary><div class="ans">{{ $item.a }}</div></details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- AREAS -->
+<section class="areas">
+  <div class="wrap">
+    <span class="kicker">Where We Work</span>
+    <h2>{{ .Params.areasHeading | default "Serving intown Atlanta." }}</h2>
+    <div class="chips">
+      {{ range .Site.Params.neighborhoods }}<a class="chip" href="#">{{ . }}</a>{{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <img src="{{ .Params.ctaImage | default "images/newsong-our-work-interiors-13.jpg" | relURL }}" alt="Atlanta home">
+  <div class="wrap">
+    <span class="kicker" style="color:var(--yellow)">{{ .Params.ctaKicker | default "Ready When You Are" }}</span>
+    <h2>{{ .Params.ctaHeading | default "Let's talk about your project." }}</h2>
+    <p>{{ .Params.ctaText | default "Schedule a call and we'll take it from there." }}</p>
+    <a class="btn btn-yellow" href="tel:{{ .Site.Params.phoneHref }}">Schedule a Call · {{ .Site.Params.phone }}</a>
+  </div>
+</section>
+{{ end }}

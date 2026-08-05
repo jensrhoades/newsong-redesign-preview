@@ -1,0 +1,30 @@
+# baseURL is set here for local reference / `hugo server`.
+# On deploy, the GitHub Pages workflow overrides it with the real Pages URL
+# (project subpath now; the custom domain automatically once DNS is flipped).
+baseURL = "https://jensrhoades.github.io/newsong-redesign-preview/"
+locale = "en-us"
+title = "NewSong Renovations"
+enableRobotsTXT = true
+
+[params]
+  # Single source of truth for contact details — change once, applies site-wide.
+  phone = "678-325-2436"
+  phoneHref = "6783252436"
+  addressLine1 = "641 Schuyler Ave SE"
+  addressLine2 = "Atlanta, GA 30312"
+  rating = "130+ Google reviews"
+  serviceArea = "Serving Intown Atlanta & the North Georgia Mountains"
+
+  # Preview-only page switcher pills. Set to false (or delete) before real launch.
+  showSwitcher = true
+
+  # Shared neighborhood list for service-page "Where We Work" chips.
+  neighborhoods = [
+    "Decatur", "Buckhead", "Virginia-Highland",
+    "Inman Park", "Candler Park", "Grant Park",
+    "Kirkwood", "Oakhurst", "Ansley Park",
+    "Druid Hills", "Brookhaven", "Vinings",
+  ]
+
+[markup.goldmark.renderer]
+  unsafe = true   # allow raw HTML in content where needed

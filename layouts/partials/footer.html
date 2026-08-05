@@ -1,0 +1,31 @@
+{{ $home := site.Home.RelPermalink }}
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="fbrand"><img src="{{ "images/newsong-logo-light.png" | relURL }}" alt="NewSong Renovations"></div>
+        <p style="max-width:32ch">Luxury remodeling and custom home building for intown Atlanta, the surrounding communities, and the North Georgia mountains.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="{{ $home }}#services">Services</a>
+        <a href="{{ $home }}#work">Our Work</a>
+        <a href="{{ $home }}#about">About</a>
+        <a href="{{ $home }}#areas">Service Areas</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="{{ "services/kitchens/" | relURL }}">Kitchens &amp; Baths</a>
+        <a href="#">Whole Home</a>
+        <a href="#">Custom Homes</a>
+        <a href="#">Exteriors</a>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <a class="fphone" href="tel:{{ .Site.Params.phoneHref }}">{{ .Site.Params.phone }}</a>
+        <p style="margin-top:.5rem">{{ .Site.Params.addressLine1 }}<br>{{ .Site.Params.addressLine2 }}</p>
+      </div>
+    </div>
+    <div class="fbot"><span>© {{ now.Year }} NewSong Renovations. All rights reserved.</span><span>Privacy Policy</span></div>
+  </div>
+</footer>

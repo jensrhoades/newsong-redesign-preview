@@ -1,0 +1,10 @@
+{{/* Preview-only page switcher. Controlled by params.showSwitcher in hugo.toml.
+     Set that to false (or delete this partial's include in baseof) before launch. */}}
+{{ if .Site.Params.showSwitcher }}
+{{ $home := site.Home.RelPermalink }}
+{{ $kitchens := "services/kitchens/" | relURL }}
+<div class="switcher">
+  <a href="{{ $home }}"{{ if .IsHome }} class="on"{{ end }}>Home</a>
+  <a href="{{ $kitchens }}"{{ if eq .Section "services" }} class="on"{{ end }}>Kitchens</a>
+</div>
+{{ end }}

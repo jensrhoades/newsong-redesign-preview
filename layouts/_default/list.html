@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section>
+  <div class="wrap">
+    <span class="kicker">{{ .Title }}</span>
+    <h1 class="sec-title">{{ .Title }}</h1>
+    {{ .Content }}
+    <div class="svc-grid" style="margin-top:32px">
+      {{ range .Pages }}
+      <a class="svc-card" href="{{ .RelPermalink }}" style="display:block">
+        <h3 style="color:var(--plum)">{{ .Title }}</h3>
+        {{ with .Params.lead }}<p style="color:var(--muted)">{{ . }}</p>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

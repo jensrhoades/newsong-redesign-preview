@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }}
+</head>
+{{- $bodyClass := "page-default" -}}
+{{- if .IsHome -}}{{ $bodyClass = "page-home" }}{{- else if eq .Section "services" -}}{{ $bodyClass = "page-service" }}{{- end -}}
+<body class="{{ $bodyClass }}">
+  {{ partial "switcher.html" . }}
+  {{ partial "header.html" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "footer.html" . }}
+</body>
+</html>
