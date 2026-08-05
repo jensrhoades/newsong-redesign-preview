@@ -1,62 +1,130 @@
-# NewSong Renovations — Site Rebuild (Direction C: Faithful Refresh)
+# NewSong Renovations — Website
 
-Working files for the NewSong website rebuild. Direction C keeps the current brand
-(plum #594A5F, chartreuse-yellow #EED82C, Bree Serif, heart-in-hex logo, overlapping
-plum quick-link cards) and refreshes structure, spacing, and photography.
+Hugo site for NewSong Renovations, a luxury Atlanta remodeler and custom-home builder.
+Ported from the approved flat-HTML preview into a Hugo project with shared layouts, so
+header, footer, and styles are edited in one place instead of on every page.
 
-Final build target: Hugo. These HTML files are the approved design reference.
+**Live preview:** https://jensrhoades.github.io/newsong-redesign-preview/
+(project subpath for now; DNS for `newsongatl.com` will be pointed here at launch — see
+[Launch](#launch-going-from-preview-to-newsongatlcom)).
 
-## Files
+Design is locked: plum `#594A5F`, chartreuse-yellow `#EED82C`, Bree Serif + Roboto,
+heart-in-hex logo, plum top bar, overlapping quick-link cards, alternating
+white/plum/yellow bands, and the architectural-drawing fade (`bg-26.png`) on white
+sections. This is a structural project, not a redesign — don't restyle.
 
-- `index.html` — homepage
-- `kitchens.html` — service page template (kitchens); other services will follow this pattern
-- `images/` — real NewSong photography goes here (see manifest below)
+## Requirements
 
-The pill switcher (top-right) links the two pages together for review. It can be
-removed before the Hugo port.
+- [Hugo **extended**](https://gohugo.io/installation/) v0.162.1 or newer (the deploy
+  workflow pins this version)
 
-## Image manifest
-
-Images are referenced by path, not embedded. Drop real photos into `images/` using
-these exact filenames. Suggested source files from the current site's media library
-(`/wp-content/uploads/2024/12/`) are listed, but any on-brand replacement is fine.
-
-### Homepage (index.html)
-
-| Filename | Slot | Suggested source |
-|---|---|---|
-| `hero-exterior.jpg` | Hero background (historic home) | `newsong-our-work-exteriors-5.jpg` |
-| `card-kitchen.jpg` | Quick-link card: Kitchens | `newsong-our-work-kitchens-1.jpg` |
-| `card-bathroom.jpg` | Quick-link card: Bathrooms | `newsong-our-work-bathrooms-4.jpg` |
-| `card-wholehome.jpg` | Quick-link card: Whole Home | `newsong-our-work-interiors-5.jpg` |
-| `card-exterior.jpg` | Quick-link card: Exteriors | `newsong-our-work-exteriors-2.jpg` |
-| `about.jpg` | "Who We Are" split image | `newsong-our-work-exteriors-7.jpg` |
-| `featured-project.jpg` | Yellow featured-project callout | `newsong-our-work-interiors-8.jpg` |
-| `cta-interior.jpg` | Bottom CTA background | `newsong-our-work-interiors-13.jpg` |
-
-### Kitchen service page (kitchens.html)
-
-| Filename | Slot | Suggested source |
-|---|---|---|
-| `kitchen-hero.jpg` | Hero background | `newsong-our-work-kitchens-1.jpg` |
-| `kitchen-gallery-1.jpg` … `kitchen-gallery-6.jpg` | Gallery grid | any six kitchen/interior shots |
-| `cta-interior.jpg` | Bottom CTA (shared with homepage) | `newsong-our-work-interiors-13.jpg` |
-
-Recommended: resize hero/CTA images to ~1500px wide, cards/gallery to ~800px, JPEG
-quality ~70, to keep the page fast.
-
-## Brand notes (confirm before final commit)
-
-The plum and yellow here are pulled from the live website's CSS. Before locking the
-build, verify these match NewSong's printed collateral (vehicle wraps, cards, signage).
-If they differ, update the CSS variables at the top of each file:
+## Local development
 
 ```
---plum:#594A5F;
---yellow:#EED82C;
+hugo server
 ```
 
-## Other directions (for reference)
+Then open the URL Hugo prints. With the current `baseURL`, that's
+http://localhost:1313/newsong-redesign-preview/. The dev server live-reloads on save.
 
-Directions A (Warm Editorial) and B (Modern Craft) were also explored. C was chosen.
-A and B files exist in the review outputs if needed later.
+To build the static site into `public/` (what gets deployed):
+
+```
+hugo --gc --minify
+```
+
+`public/` and `resources/` are build artifacts and are gitignored — never commit them.
+
+## Project structure
+
+```
+hugo.toml                     # site config + contact params + neighborhood list
+archetypes/default.md         # default front matter for `hugo new`
+assets/css/main.css           # ALL styles — single source of truth; brand vars in :root
+layouts/
+  _default/
+    baseof.html               # HTML shell; sets <body> class (page-home / page-service)
+    single.html               # reusable service-page template (front-matter driven)
+    list.html                 # section index (e.g. /services/)
+  index.html                  # homepage sections
+  partials/
+    head.html                 # <head>: meta, fonts, CSS pipeline
+    header.html               # top bar + sticky nav (edit once, applies everywhere)
+    footer.html               # footer (edit once, applies everywhere)
+    switcher.html             # preview-only page-switcher pills (gated on showSwitcher)
+content/
+  _index.md                   # homepage front matter
+  services/
+    _index.md                 # /services/ list page
+    kitchens.md               # kitchen service page (all copy in front matter)
+static/images/                # photography; served at /images/
+.github/workflows/hugo.yml    # GitHub Pages build + deploy
+```
+
+## Common edits
+
+- **Phone, address, service area, review count** — `[params]` in `hugo.toml`. Change once;
+  every page updates.
+- **Nav or footer links** — `layouts/partials/header.html` / `footer.html`. One edit, all pages.
+- **Neighborhood chips** on service pages — `params.neighborhoods` in `hugo.toml`.
+- **Brand colors / fonts** — the `:root` block at the top of `assets/css/main.css`.
+
+## Adding a service page
+
+Each new service (bathrooms, whole-home, exteriors, basements/ADUs, …) is a single
+content file — no template work needed. Copy `content/services/kitchens.md` and edit the
+front matter:
+
+```yaml
+---
+title: "Bathroom Remodeling in Atlanta"
+crumbLabel: "Bathrooms"
+description: "..."               # meta description
+ctaAnchor: "#quote"             # header "Schedule a Call" target on this page
+heroImage: "images/newsong-our-work-bathrooms-1.jpg"
+lead: "One-sentence hero subhead."
+introKicker: "Bathroom Renovations"
+introHeading: "Section heading above the intro copy."
+railText: "Sticky call-rail blurb."
+galleryKicker: "Recent Bathrooms"
+galleryHeading: "A look at our work."
+gallery:                        # any number of image paths under static/
+  - images/newsong-our-work-bathrooms-2.jpg
+  - images/newsong-our-work-bathrooms-3.jpg
+faqKicker: "Bathroom FAQ"
+faqHeading: "Answers before you start."
+faq:
+  - q: "Question?"
+    a: "Answer."
+areasHeading: "Bathroom remodeling across intown Atlanta."
+ctaKicker: "Ready When You Are"
+ctaHeading: "Let's design your new bathroom."
+ctaText: "Schedule a call and we'll take it from there."
+ctaImage: "images/newsong-our-work-interiors-13.jpg"
+---
+Intro paragraphs go here as normal Markdown body copy.
+```
+
+The 4-step process section, the call rail, and the neighborhood chips are generated by the
+template, so they stay consistent across services automatically. Custom Homes will need its
+own content plan (different buyer: land, architecture, ground-up build) before it's built.
+
+## Deploy
+
+Pushing to `main` triggers `.github/workflows/hugo.yml`, which builds with Hugo and
+publishes to GitHub Pages. Pages **must** be set to **GitHub Actions** as the source
+(Settings → Pages → Build and deployment → Source: GitHub Actions) — if it's ever switched
+back to "Deploy from a branch", the built-in Jekyll builder will rebuild this README as the
+homepage instead of the Hugo site. The workflow injects the correct `baseURL` automatically
+(project subpath now, the custom domain once it's configured), so no code change is needed
+at launch.
+
+## Launch (going from preview to newsongatl.com)
+
+When DNS for `newsongatl.com` is pointed at this site:
+
+1. Set `showSwitcher = false` in `hugo.toml` to remove the preview page-switcher pills.
+2. Add a `static/CNAME` file containing `newsongatl.com`, and set the custom domain under
+   Settings → Pages.
+3. Push. `configure-pages` picks up the custom domain and the site serves from the root —
+   all links already resolve correctly because they use Hugo URL helpers.
