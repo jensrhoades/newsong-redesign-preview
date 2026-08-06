@@ -1,0 +1,25 @@
+# Canonical service list — drives the /services/ overview cards.
+- slug: kitchens
+  name: Kitchens
+  blurb: Layouts and finishes built around how you live.
+  image: images/newsong-services-kitchen-thumb.jpg
+- slug: bathrooms
+  name: Bathrooms
+  blurb: Spa-calm spaces, built to last.
+  image: images/newsong-services-bathroom-thumb.jpg
+- slug: interiors
+  name: Interiors
+  blurb: Whole-room renovations and additions.
+  image: images/newsong-services-interiors-thumb.jpg
+- slug: exteriors
+  name: Exteriors
+  blurb: Roofing, siding, windows, and curb appeal.
+  image: images/newsong-services-exteriors-thumb.jpg
+- slug: porches
+  name: Porches
+  blurb: Screened porches and outdoor living.
+  image: images/newsong-services-porches-thumb.jpg
+- slug: whole-home
+  name: Whole Home
+  blurb: Start-to-finish transformations, inside and out.
+  image: images/newsong-services-interiors-featured.jpg

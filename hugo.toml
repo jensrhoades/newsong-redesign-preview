@@ -6,24 +6,47 @@ locale = "en-us"
 title = "NewSong Renovations"
 enableRobotsTXT = true
 
+# No blog/taxonomies on this site — suppress the empty /tags/ and /categories/ pages.
+disableKinds = ["taxonomy", "term"]
+
 [params]
   # Single source of truth for contact details — change once, applies site-wide.
   phone = "678-325-2436"
   phoneHref = "6783252436"
+  email = "info@newsongatl.com"
   addressLine1 = "641 Schuyler Ave SE"
   addressLine2 = "Atlanta, GA 30312"
+  mapLink = "https://maps.app.goo.gl/3jYJwjikA7SXDY536"
   rating = "130+ Google reviews"
   serviceArea = "Serving Intown Atlanta & the North Georgia Mountains"
+
+  # Social profiles (used in header/footer/contact).
+  instagram = "https://www.instagram.com/newsongrenovations/"
+  facebook = "https://www.facebook.com/newsongatl"
+  houzz = "http://www.houzz.com/pro/jason-smith68/new-song-renovations-llc"
+
+  # Google My Maps embed for the Service Area page.
+  mapEmbed = "https://www.google.com/maps/d/embed?mid=1jjUBfEzgwPQ662yWi6O6CnQqQE5t5lw"
 
   # Preview-only page switcher pills. Set to false (or delete) before real launch.
   showSwitcher = true
 
-  # Shared neighborhood list for service-page "Where We Work" chips.
+  # Shorter neighborhood list for service-page "Where We Work" chips.
   neighborhoods = [
     "Decatur", "Buckhead", "Virginia-Highland",
     "Inman Park", "Candler Park", "Grant Park",
     "Kirkwood", "Oakhurst", "Ansley Park",
     "Druid Hills", "Brookhaven", "Vinings",
+  ]
+
+  # Full list of communities served (mirrors the live Service Area page).
+  communities = [
+    "Grant Park", "Chosewood Park", "Ormewood Park", "Peoplestown",
+    "Summerhill", "East Atlanta", "Candler Park", "Inman Park",
+    "Capitol View", "West End", "Kirkwood", "Decatur",
+    "East Lake", "Avondale Estates", "Oakhurst", "Virginia-Highland",
+    "Morningside", "Ansley Park", "Emory", "Buckhead",
+    "Chastain Park", "West Midtown", "North Georgia Mountains",
   ]
 
 [markup.goldmark.renderer]

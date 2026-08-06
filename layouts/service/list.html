@@ -1,0 +1,5 @@
+{{/* No standalone /service/ index on the live site — send it to the Services overview. */}}
+{{ define "main" }}
+<meta http-equiv="refresh" content="0; url={{ "services/" | relURL }}">
+<section><div class="wrap"><p>Redirecting to <a href="{{ "services/" | relURL }}">Services</a>…</p></div></section>
+{{ end }}

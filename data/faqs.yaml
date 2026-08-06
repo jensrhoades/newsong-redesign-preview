@@ -1,0 +1,18 @@
+# Real FAQ content from newsongatl.com. Rendered by layouts/partials/faq.html
+# and reused on the home and about pages.
+- q: "What types of remodeling services do you offer?"
+  a: "We have the expertise to complete a wide array of construction projects and styles: 2nd story additions, whole house renovations, historic renovations, additions, custom homes, exterior renovations, basements, and ADUs."
+- q: "What is the timeline for completing a typical remodel?"
+  a: "Most projects are typically completed in 6–12 months. We always finish your project in an efficient and timely manner."
+- q: "Can I make changes to the design during the construction phase?"
+  a: "We will always listen when you have a design preference; however, our design team works hard on the front end to make the execution of the agreed-upon design as seamless as possible. So, while you can technically make changes, it is likely to set back the completion of the project."
+- q: "Can I bring my preferred contractors to specific phases of the job?"
+  a: "In order to take ownership of providing a top-quality product, we always work with our team of skilled subcontractors who bring years of expertise to every project."
+- q: "Do you work on historical homes?"
+  a: "We love working on historical homes. Honestly, it's what we're best at! And we don't only work on one type of historical architecture — we can work on them all! Craftsman, Victorian, colonials, Mid-century Modern… you name it, we can work on it."
+- q: "Do you pull permits?"
+  a: "Yes! We are a licensed general contractor. All jobs we take on will have the necessary permits pulled with the local municipality or county."
+- q: "Can I live in my house during construction?"
+  a: "Since the construction and remodeling process is so all-encompassing, we have found that it's usually best for a great remodel and a great relationship for our clients to move out during construction."
+- q: "What about warranties?"
+  a: "We provide a one-year written warranty on all workmanship and products. Our warranty excludes typical wear-and-tear that happens during the use of the house. We do top-quality work, and we are willing to back it up!"

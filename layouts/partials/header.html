@@ -15,15 +15,14 @@
       <img src="{{ "images/newsong-logo.png" | relURL }}" alt="NewSong Renovations">
     </a>
     <nav class="navlinks">
-      <a href="{{ $home }}#services">Services</a>
-      <a href="{{ $home }}#work">Our Work</a>
-      <a href="{{ $home }}#about">About</a>
-      <a href="{{ $home }}#areas">Service Areas</a>
-      <a href="{{ $home }}#faq">FAQ</a>
+      <a href="{{ "services/" | relURL }}">Services</a>
+      <a href="{{ "service-area/" | relURL }}">Service Area</a>
+      <a href="{{ "about/" | relURL }}">About Us</a>
+      <a href="{{ "our-work/" | relURL }}">Our Work</a>
     </nav>
     <div class="navcta">
       <span class="navphone">{{ .Site.Params.phone }}</span>
-      <a class="btn btn-yellow" href="{{ .Params.ctaAnchor | default "#contact" }}">Schedule a Call</a>
+      <a class="btn btn-yellow" href="{{ "contact/" | relURL }}">Schedule a Call</a>
     </div>
   </div>
 </header>

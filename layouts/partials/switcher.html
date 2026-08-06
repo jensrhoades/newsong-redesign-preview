@@ -1,10 +1,14 @@
 {{/* Preview-only page switcher. Controlled by params.showSwitcher in hugo.toml.
      Set that to false (or delete this partial's include in baseof) before launch. */}}
 {{ if .Site.Params.showSwitcher }}
-{{ $home := site.Home.RelPermalink }}
-{{ $kitchens := "services/kitchens/" | relURL }}
+{{ $base := "" }}{{ with .File }}{{ $base = .ContentBaseName }}{{ end }}
 <div class="switcher">
-  <a href="{{ $home }}"{{ if .IsHome }} class="on"{{ end }}>Home</a>
-  <a href="{{ $kitchens }}"{{ if eq .Section "services" }} class="on"{{ end }}>Kitchens</a>
+  <a href="{{ site.Home.RelPermalink }}"{{ if .IsHome }} class="on"{{ end }}>Home</a>
+  <a href="{{ "services/" | relURL }}"{{ if eq $base "services" }} class="on"{{ end }}>Services</a>
+  <a href="{{ "service/kitchens/" | relURL }}"{{ if eq .Section "service" }} class="on"{{ end }}>Service</a>
+  <a href="{{ "about/" | relURL }}"{{ if eq $base "about" }} class="on"{{ end }}>About</a>
+  <a href="{{ "our-work/" | relURL }}"{{ if eq $base "our-work" }} class="on"{{ end }}>Work</a>
+  <a href="{{ "service-area/" | relURL }}"{{ if eq $base "service-area" }} class="on"{{ end }}>Areas</a>
+  <a href="{{ "contact/" | relURL }}"{{ if eq $base "contact" }} class="on"{{ end }}>Contact</a>
 </div>
 {{ end }}

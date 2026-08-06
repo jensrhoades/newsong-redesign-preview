@@ -1,0 +1,14 @@
+{{/* Testimonials band. Reads real reviews from data/reviews.yaml.
+     Params: count (int), kicker, heading, link, linkText. */}}
+<section class="tstm" id="reviews">
+  <div class="wrap center">
+    <span class="kicker">{{ .kicker | default "Reviews" }}</span>
+    <h2 class="sec-title">{{ .heading | default "Our clients say it best." }}</h2>
+    <div class="tgrid" style="text-align:left">
+      {{ range first (.count | default 6) hugo.Data.reviews }}
+      <div class="tcard"><div class="stars">★★★★★</div><p>“{{ .short }}”</p><div class="who">{{ .name }}<small>{{ .source }}</small></div></div>
+      {{ end }}
+    </div>
+    {{ with .link }}<div style="margin-top:36px"><a class="btn btn-plum" href="{{ . }}">{{ $.linkText | default "Explore Testimonials" }}</a></div>{{ end }}
+  </div>
+</section>

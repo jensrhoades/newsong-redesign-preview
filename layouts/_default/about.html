@@ -1,0 +1,132 @@
+{{ define "main" }}
+{{ $home := site.Home.RelPermalink }}
+<!-- HERO -->
+<section class="svc-hero">
+  <img class="bg" src="{{ "images/newsong-about-hero-image.jpg" | relURL }}" alt="About NewSong Renovations">
+  <div class="wrap">
+    <div class="crumb"><a href="{{ $home }}">Home</a> / About Us</div>
+    <h1>Expert Renovation Services for Intown Atlanta and Surrounding Communities</h1>
+    <p class="lead">NewSong Renovations brings over 20 years of expertise in home remodeling, crafting spaces that reflect your personality and support your vision of community.</p>
+    <div class="hr-actions">
+      <a class="btn btn-yellow" href="{{ "contact/" | relURL }}">Schedule a Call</a>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN/BUILD -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-img"><img src="{{ "images/newsong-design-build-company-image.jpg" | relURL }}" alt="NewSong design-build team"></div>
+    <div>
+      <span class="kicker">Who We Are</span>
+      <h2 class="sec-title">A design-build company you can trust.</h2>
+      <p>As a design-build company, we work with you every step of the way to get the result you want. During the design process, we prioritize building relationships with our clients founded on trust and mutual understanding.</p>
+      <p>From there, we pride ourselves in maintaining transparent communication as our top-tier design and construction team diligently works to execute a project that is sure to exceed your expectations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT MAKES US DIFFERENT -->
+<section class="feature alt">
+  <div class="wrap">
+    <div>
+      <span class="kicker">What Makes Us Different</span>
+      <h2 class="sec-title">Communication, trust, and accountability.</h2>
+      <p>We prioritize maintaining great communication with our clients. We recognize that the presence of trust and accountability is central to any fruitful relationship.</p>
+      <p>We always aim to uphold our commitment to transparency and integrity, recognizing our clients as valued partners rather than mere transactions. Through open communication and genuine engagement, we continue to foster profound relationships with those we collaborate with.</p>
+    </div>
+    <div class="feature-img"><img src="{{ "images/newsong-make-us-different-image.jpg" | relURL }}" alt="What makes NewSong different"></div>
+  </div>
+</section>
+
+<!-- OUR EXPERTISE -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-img"><img src="{{ "images/newson-expertise-image.jpg" | relURL }}" alt="NewSong renovation expertise"></div>
+    <div>
+      <span class="kicker">Our Expertise</span>
+      <h2 class="sec-title">Comprehensive in-town renovations.</h2>
+      <p>Although we can execute a wide range of projects, our expertise is comprehensive in-town renovations. We remain deeply committed to safeguarding the integrity of the homes nestled within Atlanta's historic districts while seamlessly integrating modern enhancements — a harmonious blend of tradition and innovation.</p>
+      <ul class="ticklist">
+        <li><span class="tick">✓</span> 2nd story additions</li>
+        <li><span class="tick">✓</span> Whole house renovations</li>
+        <li><span class="tick">✓</span> Historic renovations</li>
+        <li><span class="tick">✓</span> Additions &amp; custom homes</li>
+        <li><span class="tick">✓</span> Exterior renovations</li>
+        <li><span class="tick">✓</span> Basements &amp; ADUs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team alt" id="team">
+  <div class="wrap center">
+    <span class="kicker">Our Team</span>
+    <h2 class="sec-title">Meet the people behind NewSong.</h2>
+    <div class="team-grid">
+      <div class="tmember">
+        <div class="tphoto"><img src="{{ "images/newsong-member-jason-headshot.jpg" | relURL }}" alt="Jason Smith"></div>
+        <h3>Jason Smith</h3><span class="trole">Owner</span>
+        <p>Jason has a deep-rooted passion for delivering exceptional client experiences through honest, transparent communication — honed over two decades. Beginning as a clean-up boy on his grandfather's residential projects, he absorbed the trade while fostering a love for craftsmanship. He holds a construction management degree from GA Southern University and founded NewSong after years in heavy industrial and residential construction. Outside work, you'll find Jason cooking, spending time with loved ones, and mastering putt putt.</p>
+      </div>
+      <div class="tmember">
+        <div class="tphoto"><img src="{{ "images/newsong-member-gabe-headshot.jpg" | relURL }}" alt="Gabe Seibel"></div>
+        <h3>Gabe Seibel</h3><span class="trole">Pre-Construction Manager</span>
+        <p>With over a decade of experience spanning various construction roles, Gabe brings a wealth of experience to crafting exceptional spaces. His journey began as a handyman, evolved through managing high-end office facilities and building custom furniture and millwork, and culminated in five years as a renovation project manager. Beyond his day job, Gabe is quite the outdoorsman — he enjoys fly fishing and cycling, and even thru-hiked the entire Appalachian Trail.</p>
+      </div>
+      <div class="tmember">
+        <div class="tphoto"><img src="{{ "images/newsong-member-david-headshot.jpg" | relURL }}" alt="David Gunter"></div>
+        <h3>David Gunter</h3><span class="trole">Project Manager</span>
+        <p>David finds joy in bringing clients' dreams to life through meticulous planning, teamwork, and hands-on execution. From a childhood fascination with disassembling and reassembling toys to running a successful remodeling company for 15 years, David has always been drawn to piecing together tangible results from abstract ideas. Outside work, his greatest joy is time with his wife and four children — plus roasting coffee and a hidden dream of stand-up comedy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS & AWARDS -->
+<section id="press">
+  <div class="wrap center">
+    <span class="kicker">Press &amp; Awards</span>
+    <h2 class="sec-title">Trusted by over 100 Intown Atlanta homeowners.</h2>
+    <p class="sec-sub" style="margin:0 auto 2rem">With over 100 satisfied clients in Intown Atlanta, we've built a reputation for excellence that has earned rave reviews and numerous referrals. While we continue to deliver exceptional work, our biggest reward is the trust and appreciation of our clients.</p>
+    <div class="awards-img"><img src="{{ "images/inset-awards.jpg" | relURL }}" alt="NewSong Renovations awards and associations"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <span class="kicker">Our Process</span>
+    <h2>Built to keep you in control, from vision to completion.</h2>
+    <div class="steps">
+      <div class="step"><h3>Initial Consultation</h3><p>We listen to your needs and learn exactly what your vision, preferences, and financial requirements are for your project.</p></div>
+      <div class="step"><h3>Concept Phase</h3><p>Our architects create 2–3 conceptual floor plans, capturing your ideas on paper and shaping an initial budget for your consideration.</p></div>
+      <div class="step"><h3>Preconstruction</h3><p>We turn concepts into full architectural plans, coordinate permitting and engineering, and build a detailed budget and proposal.</p></div>
+      <div class="step"><h3>Construction</h3><p>Our craftsmen bring your design to life with the best materials and constant communication — regular updates the whole way.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEES -->
+<section class="feature" id="guarantees">
+  <div class="wrap">
+    <div class="feature-img"><img src="{{ "images/newsong-guarantees-image.jpg" | relURL }}" alt="NewSong guarantees"></div>
+    <div>
+      <span class="kicker">Guarantees</span>
+      <h2 class="sec-title">A finished product you'll be proud of.</h2>
+      <p>We guarantee the best residential building experience you will ever have, along with a finished product that you'll be proud of for years to come — backed by a one-year written warranty on all workmanship and products.</p>
+      <a class="btn btn-outline-plum" href="{{ "contact/" | relURL }}">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+{{ partial "reviews.html" (dict "count" 9 "kicker" "Testimonials" "heading" "Our clients say it best.") }}
+
+<!-- FAQ -->
+{{ partial "faq.html" (dict "kicker" "Good to Know" "heading" "Frequently asked questions." "cta" ("contact/" | relURL) "ctaText" "Schedule a Call") }}
+
+<!-- CTA -->
+{{ partial "cta.html" (dict "kicker" "Let's Talk" "heading" "Consult with our experts about your remodeling project in Atlanta's Intown communities!" "href" ("contact/" | relURL) "label" "Schedule a Call") }}
+{{ end }}

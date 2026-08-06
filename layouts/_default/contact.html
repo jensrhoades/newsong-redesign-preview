@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{ $home := site.Home.RelPermalink }}
+<!-- HERO -->
+<section class="svc-hero">
+  <img class="bg" src="{{ "images/iboy-contact-hero.jpg" | relURL }}" alt="Contact NewSong Renovations">
+  <div class="wrap">
+    <div class="crumb"><a href="{{ $home }}">Home</a> / Contact</div>
+    <h1>Contact Our Team</h1>
+    <p class="lead">Reach out to discuss your custom home ideas or schedule a consultation. Our team is here to assist with any questions and guide you through the building process.</p>
+    <div class="hr-actions">
+      <a class="btn btn-yellow" href="tel:{{ .Site.Params.phoneHref }}">Call {{ .Site.Params.phone }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="kicker">Get In Touch</span>
+        <h2 class="sec-title">Let's start the conversation.</h2>
+        <ul class="contact-list">
+          <li><strong>Call</strong><a href="tel:{{ .Site.Params.phoneHref }}">{{ .Site.Params.phone }}</a></li>
+          <li><strong>Email</strong><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
+          <li><strong>Visit</strong><a href="{{ .Site.Params.mapLink }}" target="_blank" rel="noopener">{{ .Site.Params.addressLine1 }}, {{ .Site.Params.addressLine2 }}</a></li>
+        </ul>
+        <div class="fsocial fsocial-plum">
+          <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">Instagram</a>
+          <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener">Facebook</a>
+          <a href="{{ .Site.Params.houzz }}" target="_blank" rel="noopener">Houzz</a>
+        </div>
+      </div>
+      <div class="cform-wrap">
+        <h3>Send Us a Message</h3>
+        <form class="cform" action="#" method="post">
+          <div class="row2">
+            <label>First Name*<input type="text" name="first_name" required></label>
+            <label>Last Name*<input type="text" name="last_name" required></label>
+          </div>
+          <div class="row2">
+            <label>Email*<input type="email" name="email" required></label>
+            <label>Mobile*<input type="tel" name="mobile" required></label>
+          </div>
+          <label>Address<input type="text" name="address"></label>
+          <div class="row2">
+            <label>City*<input type="text" name="city" required></label>
+            <label>Zip Code*<input type="text" name="zip" required></label>
+          </div>
+          <label>Project Type*
+            <select name="project_type" required>
+              <option value="">Select…</option>
+              <option>New Homes</option><option>Bathrooms</option><option>Exteriors</option>
+              <option>Interiors</option><option>Kitchen</option><option>Porches</option><option>Other</option>
+            </select>
+          </label>
+          <label>I have a question about*
+            <select name="question_about" required>
+              <option value="">Select…</option>
+              <option>Project Design</option><option>Project Pricing</option>
+            </select>
+          </label>
+          <label>Questions and Comments<textarea name="message" rows="4"></textarea></label>
+          <label class="consent"><input type="checkbox" name="consent"> I consent to receive marketing text messages from NewSong Renovations at the phone number provided. Frequency may vary. Message &amp; data rates may apply. Reply STOP to opt out.</label>
+          <button class="btn btn-yellow" type="submit">Submit</button>
+          <p class="form-note">This preview form isn't wired to a backend yet — for the fastest response, call <a href="tel:{{ .Site.Params.phoneHref }}">{{ .Site.Params.phone }}</a> or email <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+{{ partial "reviews.html" (dict "count" 6 "kicker" "Testimonials" "heading" "Our clients say it best." "link" (printf "%s#reviews" ("about/" | relURL)) "linkText" "Explore Testimonials") }}
+{{ end }}

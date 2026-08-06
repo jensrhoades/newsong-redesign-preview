@@ -1,0 +1,74 @@
+{{ define "main" }}
+{{ $home := site.Home.RelPermalink }}
+{{ $svc := .Params.service }}
+{{/* service -> hero image */}}
+{{ $heroMap := dict
+  "kitchens" "images/newsong-services-kitchens-featured.jpg"
+  "bathrooms" "images/newsong-services-bathrooms-featured.jpg"
+  "whole-home" "images/newsong-our-work-exteriors-5.jpg"
+  "home" "images/newsong-our-work-exteriors-7.jpg"
+  "basement" "images/newsong-our-work-interiors-8.jpg" }}
+{{ $hero := index $heroMap $svc | default "images/newsong-our-work-exteriors-5.jpg" }}
+{{/* service -> gallery image basenames (all exist in static/images) */}}
+{{ $galMap := dict
+  "kitchens" (slice "kitchens-1" "kitchens-4" "kitchens-7" "kitchens-9" "kitchens-11" "kitchens-13")
+  "bathrooms" (slice "bathrooms-1" "bathrooms-4" "bathrooms-6" "bathrooms-8" "bathrooms-9" "bathrooms-11")
+  "whole-home" (slice "kitchens-4" "interiors-8" "bathrooms-3" "exteriors-7" "interiors-16" "kitchens-11")
+  "home" (slice "kitchens-1" "bathrooms-4" "interiors-5" "exteriors-3" "porches-2" "interiors-16")
+  "basement" (slice "interiors-8" "interiors-10" "interiors-12" "interiors-16" "interiors-18" "interiors-20") }}
+{{ $gal := index $galMap $svc }}
+
+<!-- HERO -->
+<section class="svc-hero">
+  <img class="bg" src="{{ $hero | relURL }}" alt="{{ .Title }}">
+  <div class="wrap">
+    <div class="crumb"><a href="{{ $home }}">Home</a> / <a href="{{ "service-area/" | relURL }}">Service Area</a> / {{ .Params.city }}</div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.tagline }}<p class="lead">{{ . }}</p>{{ end }}
+    <div class="hr-actions">
+      <a class="btn btn-yellow" href="{{ "contact/" | relURL }}">Schedule a Call</a>
+      <a class="btn btn-outline" href="{{ "our-work/" | relURL }}">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- BODY (ported page copy) -->
+<section class="prose loc-body"><div class="wrap narrow">
+  {{ .Content }}
+</div></section>
+
+<!-- GALLERY -->
+{{ with $gal }}
+<section class="gal">
+  <div class="wrap">
+    <span class="kicker">Our Work</span>
+    <h2>A look at recent projects.</h2>
+    <div class="gg">
+      {{ range . }}
+      <a href="{{ (printf "images/newsong-our-work-%s.jpg" .) | relURL }}" target="_blank" rel="noopener"><img src="{{ (printf "images/newsong-our-work-%s.jpg" .) | relURL }}" alt="{{ $.Params.city }} project by NewSong Renovations" loading="lazy"></a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- REVIEWS -->
+{{ partial "reviews.html" (dict "count" 6 "kicker" "Testimonials" "heading" "Our clients say it best." "link" (printf "%s#reviews" ("about/" | relURL)) "linkText" "Explore Testimonials") }}
+
+<!-- AREAS WE SERVE (sibling city pages in the same URL family) -->
+{{ $sibs := where site.RegularPages "Params.family" .Params.family }}
+{{ if gt (len $sibs) 1 }}
+<section class="areas arch-fade">
+  <div class="wrap center">
+    <span class="kicker">Areas We Serve</span>
+    <h2>NewSong Renovations across intown Atlanta.</h2>
+    <div class="chips" style="justify-content:center">
+      {{ range $sibs }}<a class="chip{{ if eq .Permalink $.Permalink }} chip-on{{ end }}" href="{{ .RelPermalink }}">{{ .Params.city }}</a>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- CTA -->
+{{ partial "cta.html" (dict "kicker" "Let's Talk" "heading" "Consult with our experts about your remodeling project in Atlanta's Intown communities!" "href" ("contact/" | relURL) "label" "Schedule a Call") }}
+{{ end }}

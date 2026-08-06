@@ -1,0 +1,30 @@
+# Real Google reviews pulled from newsongatl.com (Trustindex widget).
+# Rendered by layouts/partials/reviews.html. "short" is a trimmed pull-quote
+# for the card grid; "full" preserves the complete review text.
+- name: Ryan Clancy
+  source: Google Review
+  short: "Project was extremely well managed and finished on time and (drumroll) under budget. If quality is an important factor to you, I'd highly recommend NewSong."
+- name: Drake Springer
+  source: Google Review
+  short: "David was on site nearly every single day for six months and quickly became like family. His attention to detail and commitment to quality was second to none."
+- name: Carrie Cwiak
+  source: Google Review
+  short: "What a great experience! Our project was completed on time, very close to budget, and exceeded our expectations! Weekly emails kept us up to date on the progress."
+- name: Megan Houck
+  source: Google Review
+  short: "Newsong delivered us exactly what we wanted with super high quality work and in the timeframe promised. We are thrilled with our renovation!"
+- name: Greg Morgan
+  source: Google Review
+  short: "What a smooth experience. No bad surprises, yet lots of finesse on small items I would have never thought of. Newsong Renovations surpassed all my expectations."
+- name: Jason Zwang
+  source: Google Review
+  short: "They exceeded all expectations. From planning to final completion, David and Gabe were true partners — completed ahead of schedule and under budget."
+- name: Kathleen O'Donnell
+  source: Google Review
+  short: "I had the best experience. Gabe and Jason went out of their way to keep me updated. Projects were completed above and beyond my expectations."
+- name: Ingrid Ritter
+  source: Google Review
+  short: "Honesty and integrity are the first two words that come to mind. Jason, Gabe and their crew far exceeded our expectations on our 1907 Victorian home."
+- name: Griffin Sheats
+  source: Google Review
+  short: "Communication, quality of work, and overall ease of working with this team are all exceptional. Couldn't recommend them highly enough."

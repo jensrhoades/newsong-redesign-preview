@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{ $home := site.Home.RelPermalink }}
+<!-- HERO -->
+<section class="svc-hero">
+  <img class="bg" src="{{ "images/newsong-our-work-hero-image.jpg" | relURL }}" alt="NewSong Renovations portfolio">
+  <div class="wrap">
+    <div class="crumb"><a href="{{ $home }}">Home</a> / Our Work</div>
+    <h1>Our Work</h1>
+    <p class="lead">Discover the exceptional homes we've crafted in Intown Atlanta and surrounding communities. From new builds to renovations, our portfolio highlights the quality and detail that define NewSong Renovations.</p>
+    <div class="hr-actions">
+      <a class="btn btn-yellow" href="{{ "contact/" | relURL }}">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERIES BY CATEGORY -->
+{{ $cats := slice
+  (dict "name" "Kitchens" "prefix" "kitchens" "count" 13)
+  (dict "name" "Bathrooms" "prefix" "bathrooms" "count" 11)
+  (dict "name" "Interiors" "prefix" "interiors" "count" 22)
+  (dict "name" "Porches" "prefix" "porches" "count" 8)
+  (dict "name" "Exteriors" "prefix" "exteriors" "count" 10) }}
+{{ range $i, $cat := $cats }}
+<section class="gal{{ if modBool $i 2 }} arch-fade{{ end }}" id="{{ $cat.prefix }}">
+  <div class="wrap">
+    <span class="kicker">Recent Work</span>
+    <h2>{{ $cat.name }}</h2>
+    <div class="gg">
+      {{ range seq 1 $cat.count }}
+      <a href="{{ (printf "images/newsong-our-work-%s-%d.jpg" $cat.prefix .) | relURL }}" target="_blank" rel="noopener"><img src="{{ (printf "images/newsong-our-work-%s-%d.jpg" $cat.prefix .) | relURL }}" alt="{{ $cat.name }} project by NewSong Renovations" loading="lazy"></a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- REVIEWS -->
+{{ partial "reviews.html" (dict "count" 6 "kicker" "Testimonials" "heading" "Our clients say it best." "link" (printf "%s#reviews" ("about/" | relURL)) "linkText" "Explore Testimonials") }}
+
+<!-- CTA -->
+{{ partial "cta.html" (dict "kicker" "Let's Talk" "heading" "Consult with our experts about your remodeling project in Atlanta's Intown communities!" "href" ("contact/" | relURL) "label" "Schedule a Call") }}
+{{ end }}

@@ -5,27 +5,37 @@
       <div>
         <div class="fbrand"><img src="{{ "images/newsong-logo-light.png" | relURL }}" alt="NewSong Renovations"></div>
         <p style="max-width:32ch">Luxury remodeling and custom home building for intown Atlanta, the surrounding communities, and the North Georgia mountains.</p>
+        <div class="fsocial">
+          <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">Instagram</a>
+          <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener">Facebook</a>
+          <a href="{{ .Site.Params.houzz }}" target="_blank" rel="noopener">Houzz</a>
+        </div>
       </div>
       <div>
-        <h4>Explore</h4>
-        <a href="{{ $home }}#services">Services</a>
-        <a href="{{ $home }}#work">Our Work</a>
-        <a href="{{ $home }}#about">About</a>
-        <a href="{{ $home }}#areas">Service Areas</a>
+        <h4>Quick Links</h4>
+        <a href="{{ "services/" | relURL }}">Services</a>
+        <a href="{{ "service-area/" | relURL }}">Service Area</a>
+        <a href="{{ "our-work/" | relURL }}">Our Work</a>
+        <a href="{{ "about/" | relURL }}">About Us</a>
+        <a href="{{ "contact/" | relURL }}">Contact Us</a>
+        <a href="{{ "career-opportunities/" | relURL }}">Careers</a>
       </div>
       <div>
         <h4>Services</h4>
-        <a href="{{ "services/kitchens/" | relURL }}">Kitchens &amp; Baths</a>
-        <a href="#">Whole Home</a>
-        <a href="#">Custom Homes</a>
-        <a href="#">Exteriors</a>
+        <a href="{{ "service/kitchens/" | relURL }}">Kitchens</a>
+        <a href="{{ "service/bathrooms/" | relURL }}">Bathrooms</a>
+        <a href="{{ "service/interiors/" | relURL }}">Interiors</a>
+        <a href="{{ "service/exteriors/" | relURL }}">Exteriors</a>
+        <a href="{{ "service/porches/" | relURL }}">Porches</a>
+        <a href="{{ "service/whole-home/" | relURL }}">Whole Home</a>
       </div>
       <div>
         <h4>Get in Touch</h4>
         <a class="fphone" href="tel:{{ .Site.Params.phoneHref }}">{{ .Site.Params.phone }}</a>
-        <p style="margin-top:.5rem">{{ .Site.Params.addressLine1 }}<br>{{ .Site.Params.addressLine2 }}</p>
+        <p style="margin-top:.5rem"><a href="{{ .Site.Params.mapLink }}" target="_blank" rel="noopener">{{ .Site.Params.addressLine1 }}<br>{{ .Site.Params.addressLine2 }}</a></p>
+        <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
       </div>
     </div>
-    <div class="fbot"><span>© {{ now.Year }} NewSong Renovations. All rights reserved.</span><span>Privacy Policy</span></div>
+    <div class="fbot"><span>© {{ now.Year }} NewSong Renovations. All rights reserved.</span><a href="{{ "privacy-policy/" | relURL }}">Privacy Policy</a></div>
   </div>
 </footer>

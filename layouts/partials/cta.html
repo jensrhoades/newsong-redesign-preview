@@ -1,0 +1,10 @@
+{{/* Final CTA band (plum scrim over photo). Params: image, kicker, heading, text, href, label. */}}
+<section class="cta">
+  <img src="{{ (.image | default "images/newsong-schedule-call-footer-image.jpg") | relURL }}" alt="NewSong Renovations in Atlanta">
+  <div class="wrap">
+    <span class="kicker" style="color:var(--yellow)">{{ .kicker | default "Let's Talk" }}</span>
+    <h2>{{ .heading | default "Consult with our experts about your remodeling project in Atlanta's Intown communities!" }}</h2>
+    <p>{{ .text | default "Schedule your appointment today and take the first step toward transforming your home with expert remodeling services." }}</p>
+    <a class="btn btn-yellow" href="{{ .href | default (printf "tel:%s" site.Params.phoneHref) }}">{{ .label | default "Schedule a Call" }}</a>
+  </div>
+</section>

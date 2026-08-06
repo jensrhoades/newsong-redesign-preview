@@ -1,0 +1,17 @@
+{{/* FAQ accordion. Reads real Q&A from data/faqs.yaml.
+     Params: kicker, heading, sub, cta (href), ctaText. */}}
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div>
+      <span class="kicker">{{ .kicker | default "Good to Know" }}</span>
+      <h2 class="sec-title">{{ .heading | default "Frequently asked questions." }}</h2>
+      {{ with .sub }}<p class="sec-sub">{{ . }}</p>{{ end }}
+      {{ with .cta }}<a class="btn btn-yellow" href="{{ . }}" style="margin-top:1rem">{{ $.ctaText | default "Schedule a Call" }}</a>{{ end }}
+    </div>
+    <div>
+      {{ range $i, $item := hugo.Data.faqs }}
+      <details{{ if eq $i 0 }} open{{ end }}><summary>{{ $item.q }}</summary><div class="ans">{{ $item.a }}</div></details>
+      {{ end }}
+    </div>
+  </div>
+</section>

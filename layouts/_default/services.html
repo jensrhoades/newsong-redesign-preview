@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{ $home := site.Home.RelPermalink }}
+<!-- HERO -->
+<section class="svc-hero">
+  <img class="bg" src="{{ (.Params.heroImage | default "images/newsong-services-hero-image.jpg") | relURL }}" alt="Home remodeling services by NewSong Renovations">
+  <div class="wrap">
+    <div class="crumb"><a href="{{ $home }}">Home</a> / Services</div>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.lead }}</p>
+    <div class="hr-actions">
+      <a class="btn btn-yellow" href="{{ "contact/" | relURL }}">Schedule a Call</a>
+      <a class="btn btn-outline" href="{{ "our-work/" | relURL }}">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE CARDS -->
+<section>
+  <div class="wrap center">
+    <span class="kicker">What We Do</span>
+    <h2 class="sec-title">Comprehensive remodeling, start to finish.</h2>
+    <p class="sec-sub">From custom kitchens to whole-home transformations, we bring your dream home to life with quality craftsmanship and meticulous attention to detail.</p>
+    <div class="ql-grid cols3" style="margin-top:44px">
+      {{ range hugo.Data.services }}
+      <a class="ql" href="{{ (printf "service/%s/" .slug) | relURL }}">
+        <div class="ql-img"><img src="{{ .image | relURL }}" alt="{{ .name }}"></div>
+        <div class="ql-body"><h3>{{ .name }}</h3><p>{{ .blurb }}</p><span class="go">Explore →</span></div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+{{ partial "reviews.html" (dict "count" 6 "kicker" "Testimonials" "heading" "Our clients say it best." "link" (printf "%s#reviews" ("about/" | relURL)) "linkText" "Explore Testimonials") }}
+
+<!-- CTA -->
+{{ partial "cta.html" (dict "kicker" "Let's Talk" "heading" "Consult with our experts about your remodeling project in Atlanta's Intown communities!" "href" ("contact/" | relURL) "label" "Schedule a Call") }}
+{{ end }}

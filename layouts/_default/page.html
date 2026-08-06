@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker">{{ .Params.kicker | default "NewSong Renovations" }}</span>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.lead }}<p class="lead">{{ . }}</p>{{ end }}
+  </div>
+</section>
+<section class="prose">
+  <div class="wrap narrow">
+    {{ .Content }}
+  </div>
+</section>
+{{ end }}

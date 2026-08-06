@@ -1,140 +1,86 @@
 {{ define "main" }}
+{{ $home := site.Home.RelPermalink }}
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-img"><img src="{{ "images/newsong-our-work-exteriors-5.jpg" | relURL }}" alt="Luxury home built by NewSong Renovations in Atlanta"></div>
+<section class="hero hero-centered">
+  <div class="hero-img"><img src="{{ "images/newsong-home-hero-image.jpg" | relURL }}" alt="Luxury home remodeled by NewSong Renovations in Atlanta"></div>
   <div class="wrap">
-    <span class="hero-rating"><span class="stars">★★★★★</span> Rated 5.0 by Atlanta homeowners</span>
-    <h1>Luxury remodeling and custom homes, built for how you live.</h1>
-    <p class="lead">NewSong builds and remodels Atlanta's finest homes, pairing top-notch detail with a client experience that makes the whole process a pleasure.</p>
+    <a class="hero-rating" href="#reviews"><span class="stars">★★★★★</span> 5-Star Reviews »</a>
+    <h1>Expert Renovation Services for Intown Atlanta, the Surrounding Communities, and the North Georgia Mountains</h1>
+    <p class="lead">NewSong Renovations brings over 20 years of expertise in home remodeling, crafting spaces that reflect your personality and support your vision of community. With meticulous attention to detail and a commitment to quality, we deliver beautifully designed homes that truly represent who you are.</p>
     <div class="hero-actions">
-      <a class="btn btn-yellow" href="#contact">Schedule a Call</a>
-      <a class="btn btn-outline" href="#work">See Our Work</a>
+      <a class="btn btn-yellow" href="{{ "contact/" | relURL }}">Contact Us</a>
+      <a class="btn btn-outline" href="{{ "our-work/" | relURL }}">See Our Work</a>
     </div>
   </div>
 </section>
 
-<!-- QUICK LINKS -->
+<!-- QUICK NAV CARDS (overlap hero) -->
 <div class="quicklinks">
   <div class="wrap">
-    <div class="ql-grid">
-      <a class="ql" href="{{ "services/kitchens/" | relURL }}">
-        <div class="ql-img"><img src="{{ "images/newsong-our-work-kitchens-1.jpg" | relURL }}" alt="Kitchens"></div>
-        <div class="ql-body"><h3>Kitchens</h3><p>Layouts and finishes built around how you live.</p><span class="go">Explore →</span></div>
+    <div class="navcard-grid">
+      <a class="navcard" href="{{ "services/" | relURL }}">
+        <span class="navcard-ico"><svg viewBox="0 0 24 24"><path d="M4 10v10h16V10l-8-6-8 6zm2 8v-7l6-4.5 6 4.5v7h-3v-5H9v5H6z"/></svg></span>
+        <h3>Find Your Renovation Project</h3>
       </a>
-      <a class="ql" href="#">
-        <div class="ql-img"><img src="{{ "images/newsong-our-work-bathrooms-4.jpg" | relURL }}" alt="Bathrooms"></div>
-        <div class="ql-body"><h3>Bathrooms</h3><p>Spa-calm spaces, built to last.</p><span class="go">Explore →</span></div>
+      <a class="navcard" href="{{ "service-area/" | relURL }}">
+        <span class="navcard-ico"><svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></span>
+        <h3>See Our Service Areas</h3>
       </a>
-      <a class="ql" href="#">
-        <div class="ql-img"><img src="{{ "images/newsong-our-work-interiors-5.jpg" | relURL }}" alt="Whole home"></div>
-        <div class="ql-body"><h3>Whole Home</h3><p>Additions and full renovations.</p><span class="go">Explore →</span></div>
-      </a>
-      <a class="ql" href="#">
-        <div class="ql-img"><img src="{{ "images/newsong-our-work-exteriors-3.jpg" | relURL }}" alt="Custom homes"></div>
-        <div class="ql-body"><h3>Custom Homes</h3><p>Ground-up builds, designed and built to an exacting standard.</p><span class="go">Explore →</span></div>
+      <a class="navcard" href="{{ "about/" | relURL }}">
+        <span class="navcard-ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
+        <h3>About Us</h3>
       </a>
     </div>
   </div>
 </div>
 
-<!-- INTRO -->
+<!-- GREAT DESIGNS -->
+<section class="arch-fade center">
+  <div class="wrap">
+    <span class="kicker">Great Designs for Great Moments</span>
+    <h2 class="sec-title">Transform your house into the home of your dreams.</h2>
+    <p class="sec-sub" style="margin:0 auto 1.7rem">Specializing in custom projects, we focus on creating unique spaces tailored to your vision. We prioritize understanding your goals, collaborating with you every step of the way to ensure a seamless and personalized experience — and a strong commitment to staying on time and within budget.</p>
+    <a class="btn btn-yellow" href="{{ "contact/" | relURL }}">Schedule Your Call</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
 <section class="intro arch-fade" id="about">
   <div class="wrap">
-    <div class="intro-img"><img src="{{ "images/newsong-our-work-exteriors-7.jpg" | relURL }}" alt="A NewSong renovation"></div>
+    <div class="intro-img"><img src="{{ "images/newsong-home-about-image.jpg" | relURL }}" alt="A NewSong Renovations project in Atlanta"></div>
     <div>
-      <span class="kicker">Who We Are</span>
-      <h2 class="sec-title">We treat your home like it's our own.</h2>
-      <p>NewSong Renovations is a licensed Georgia general contractor building custom homes and high-end remodels across Atlanta's in-town neighborhoods. We handle design, permitting, and construction under one roof, so the details are handled and you always know where your project stands.</p>
-      <ul>
-        <li><span class="tick">✓</span> Luxury remodeling and ground-up custom home building</li>
-        <li><span class="tick">✓</span> Daily site updates and weekly homeowner reviews</li>
-        <li><span class="tick">✓</span> One-year written warranty on every project</li>
-      </ul>
-      <a class="btn btn-outline-plum" href="#">More About NewSong</a>
+      <span class="kicker">About Us</span>
+      <h2 class="sec-title">Transforming houses into dream homes.</h2>
+      <p>At NewSong Renovations, we specialize in transforming houses into dream homes with a commitment to quality, craftsmanship, and exceptional client care. With over 20 years of expertise in construction and home remodeling, our team is passionate about bringing your vision to life.</p>
+      <p>From initial consultation to project completion, we prioritize open communication and a seamless process that keeps you informed and confident every step of the way. Whether it's a complete home renovation or a smaller project, we're dedicated to delivering beautiful, functional spaces tailored to your lifestyle.</p>
+      <a class="btn btn-outline-plum" href="{{ "about/" | relURL }}">Learn More About Us</a>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-  <div class="wrap center">
+<!-- SERVICES QUICK GRID -->
+<section class="services center" id="services">
+  <div class="wrap">
     <span class="kicker">What We Do</span>
     <h2 class="sec-title">From a single room to the whole house.</h2>
     <p class="sec-sub">High-end remodeling and custom home building, delivered on time and on budget.</p>
     <div class="svc-grid" style="text-align:left">
-      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg></div><h3>Kitchens &amp; Baths</h3><p>The rooms your home revolves around, finished with the detail luxury deserves.</p></div>
-      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg></div><h3>Whole Home &amp; Additions</h3><p>Second stories, gut renovations, and additions that transform how your home lives.</p></div>
-      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M4 10v10h16V10l-8-6-8 6zm2 8v-7l6-4.5 6 4.5v7h-3v-5H9v5H6z"/></svg></div><h3>Custom Home Building</h3><p>Ground-up custom homes designed and built to an exacting standard.</p></div>
-      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M2 20h20v2H2v-2zm2-8h2v6H4v-6zm5 0h2v6H9v-6zm5 0h2v6h-2v-6zm5 0h2v6h-2v-6zM12 2 2 9h20L12 2z"/></svg></div><h3>Porches &amp; Exteriors</h3><p>Screened porches, decks, and siding that extend how you use your home.</p></div>
-      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3z"/></svg></div><h3>Basements &amp; ADUs</h3><p>Finished basements and accessory dwelling units that add real living space.</p></div>
-      <div class="svc-card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="#2E2A0E"><path d="M12 1 2 6v2h20V6L12 1zM4 10v8H3v2h18v-2h-1v-8h-2v8h-3v-8h-2v8h-2v-8H9v8H6v-8H4z"/></svg></div><h3>Historic Restorations</h3><p>Careful updates that keep a period home's character while modernizing what's underneath.</p></div>
+      <a class="svc-card" href="{{ "service/kitchens/" | relURL }}"><h3>Kitchens</h3><p>Layouts and finishes built around how you live.</p></a>
+      <a class="svc-card" href="{{ "service/bathrooms/" | relURL }}"><h3>Bathrooms</h3><p>Spa-calm spaces, built to last.</p></a>
+      <a class="svc-card" href="{{ "service/interiors/" | relURL }}"><h3>Interiors</h3><p>Whole-room renovations and additions.</p></a>
+      <a class="svc-card" href="{{ "service/exteriors/" | relURL }}"><h3>Exteriors</h3><p>Roofing, siding, windows, and curb appeal.</p></a>
+      <a class="svc-card" href="{{ "service/porches/" | relURL }}"><h3>Porches</h3><p>Screened porches and outdoor living.</p></a>
+      <a class="svc-card" href="{{ "service/whole-home/" | relURL }}"><h3>Whole Home</h3><p>Start-to-finish transformations, inside and out.</p></a>
     </div>
   </div>
 </section>
 
-<!-- SHOWCASE -->
-<section class="showcase" id="work">
-  <div class="wrap">
-    <div class="pic"><img src="{{ "images/newsong-our-work-interiors-8.jpg" | relURL }}" alt="Featured NewSong renovation"></div>
-    <div class="txt">
-      <span class="kicker" style="color:var(--plum)">Featured Project</span>
-      <h2>A 1920s bungalow, brought back to life.</h2>
-      <p>Whole-house renovation in Virginia-Highland with a new screened porch, finished basement, and a kitchen opened to the living space. Delivered ahead of schedule and under budget.</p>
-      <a class="btn btn-plum" href="#">View the Portfolio</a>
-    </div>
-  </div>
-</section>
-
-<!-- STATS -->
-<div class="stats">
-  <div class="wrap">
-    <div class="stat"><b>20+</b><span>Years in Atlanta</span></div>
-    <div class="stat"><b>130+</b><span>Five-star reviews</span></div>
-    <div class="stat"><b>GA</b><span>Licensed GC</span></div>
-    <div class="stat"><b>1-yr</b><span>Written warranty</span></div>
-  </div>
-</div>
-
-<!-- TESTIMONIALS -->
-<section class="tstm">
-  <div class="wrap center">
-    <span class="kicker">Reviews</span>
-    <h2 class="sec-title">What Atlanta homeowners say.</h2>
-    <div class="tgrid" style="text-align:left">
-      <div class="tcard"><div class="stars">★★★★★</div><p>“Extremely well managed and finished on time and, drumroll, under budget. If quality matters to you, I'd highly recommend NewSong.”</p><div class="who">Ryan Clancy<small>Google Review</small></div></div>
-      <div class="tcard"><div class="stars">★★★★★</div><p>“David was on site nearly every day for six months and became like family. The quality standards were impeccable throughout.”</p><div class="who">Drake Springer<small>Google Review</small></div></div>
-      <div class="tcard"><div class="stars">★★★★★</div><p>“Honesty and integrity are the first words that come to mind. They far exceeded our expectations on our 1907 Victorian.”</p><div class="who">Ingrid Ritter<small>Google Review</small></div></div>
-    </div>
-  </div>
-</section>
+<!-- REVIEWS -->
+{{ partial "reviews.html" (dict "count" 6 "kicker" "Testimonials" "heading" "Our clients say it best." "link" (printf "%s#reviews" ("about/" | relURL)) "linkText" "Explore Testimonials") }}
 
 <!-- FAQ -->
-<section class="faq" id="faq">
-  <div class="wrap">
-    <div>
-      <span class="kicker">Good to Know</span>
-      <h2 class="sec-title">Questions homeowners ask us.</h2>
-      <p class="sec-sub">Still wondering about something? A quick call sorts it out.</p>
-      <a class="btn btn-yellow" href="#contact" style="margin-top:1rem">Schedule a Call</a>
-    </div>
-    <div>
-      <details open><summary>What do you build and remodel?</summary><div class="ans">Custom homes, whole-house remodels, second-story additions, kitchens, baths, basements, ADUs, porches, and exterior work. We also restore period homes when the project calls for it.</div></details>
-      <details><summary>How long does a typical remodel take?</summary><div class="ans">Most projects run 6–12 months depending on scope. We manage the schedule closely and keep you updated the whole way.</div></details>
-      <details><summary>Do you build custom homes?</summary><div class="ans">Yes. We build ground-up custom homes across in-town Atlanta, managing design, permitting, and construction as one team.</div></details>
-      <details><summary>Do you pull permits?</summary><div class="ans">Yes. As a licensed Georgia general contractor, we pull all necessary permits with the local municipality or county.</div></details>
-      <details><summary>What about warranties?</summary><div class="ans">Every project carries a one-year written warranty on workmanship and products, excluding normal wear and tear.</div></details>
-    </div>
-  </div>
-</section>
+{{ partial "faq.html" (dict "kicker" "Good to Know" "heading" "Frequently asked questions." "sub" "Still wondering about something? A quick call sorts it out." "cta" ("contact/" | relURL) "ctaText" "Schedule a Call") }}
 
 <!-- CTA -->
-<section class="cta" id="contact">
-  <img src="{{ "images/newsong-our-work-interiors-13.jpg" | relURL }}" alt="Atlanta home interior">
-  <div class="wrap">
-    <span class="kicker" style="color:var(--yellow)">Let's Talk</span>
-    <h2>Consult with our team about your Atlanta project.</h2>
-    <p>Schedule your appointment and take the first step toward a home that fits the way you live.</p>
-    <a class="btn btn-yellow" href="tel:{{ .Site.Params.phoneHref }}">Schedule a Call · {{ .Site.Params.phone }}</a>
-  </div>
-</section>
+{{ partial "cta.html" (dict "image" "images/newsong-schedule-call-footer-image.jpg" "kicker" "Let's Talk" "heading" "Consult with our experts about your remodeling project in Atlanta's Intown communities!" "text" "Schedule your appointment today and take the first step toward transforming your home with expert remodeling services." "href" ("contact/" | relURL) "label" "Schedule a Call") }}
 {{ end }}
