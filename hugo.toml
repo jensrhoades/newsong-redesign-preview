@@ -28,8 +28,8 @@ disableKinds = ["taxonomy", "term"]
   # Google My Maps embed for the Service Area page.
   mapEmbed = "https://www.google.com/maps/d/embed?mid=1jjUBfEzgwPQ662yWi6O6CnQqQE5t5lw"
 
-  # Preview-only page switcher pills. Set to false (or delete) before real launch.
-  showSwitcher = true
+  # Preview-only page switcher pills. Off — the real header/footer nav covers everything.
+  showSwitcher = false
 
   # Shorter neighborhood list for service-page "Where We Work" chips.
   neighborhoods = [
