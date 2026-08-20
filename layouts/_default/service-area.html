@@ -18,10 +18,22 @@
   <div class="wrap center">
     <span class="kicker">Communities We Serve</span>
     <h2>Serving intown Atlanta &amp; the North Georgia mountains.</h2>
-    <div class="chips" style="justify-content:center">
-      {{ range site.Params.communities }}<span class="chip">{{ . }}</span>{{ end }}
+
+    <div class="area-group">
+      <h3 class="area-sub">Intown Atlanta</h3>
+      <div class="chips" style="justify-content:center">
+        {{ range sort (where site.RegularPages "Params.family" "home-renovation-company") "Params.city" }}<a class="chip" href="{{ .RelPermalink }}">{{ .Params.city }}</a>{{ end }}
+      </div>
     </div>
-    <div style="margin-top:32px">
+
+    <div class="area-group">
+      <h3 class="area-sub">North Georgia Mountains</h3>
+      <div class="chips" style="justify-content:center">
+        {{ range sort (where site.RegularPages "Params.family" "home-remodeling") "Params.city" }}<a class="chip" href="{{ .RelPermalink }}">{{ .Params.city }}</a>{{ end }}
+      </div>
+    </div>
+
+    <div style="margin-top:36px">
       <a class="btn btn-yellow" href="{{ "contact/" | relURL }}">Schedule a Call</a>
       <a class="btn btn-outline-plum" href="{{ "services/" | relURL }}">Explore Services</a>
     </div>

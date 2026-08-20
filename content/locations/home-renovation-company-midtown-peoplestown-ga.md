@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Peoplestown, GA"
+title: "Home Remodeling & Renovation Company Peoplestown, GA"
 url: "/home-renovation-company-midtown-peoplestown-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Peoplestown"
 tagline: "Create Inspired Living Spaces With Renovation Expertise"
-description: "NewSong Renovations, the best home renovation company serving Peoplestown, GA, brings over 20 yrs of expertise, bringing your dreams to life."
+description: "NewSong Renovations, the best home remodeling and renovation company serving Peoplestown, GA, brings over 20 yrs of expertise, bringing your dreams to life."
 ---
 At **NewSong Renovations**, we understand your home holds more than walls and rooms. It is the backdrop for your daily life. As an experienced **home renovation company** serving **Peoplestown,** we focus on converting outdated or overlooked spaces into renewed environments that capture your needs and style.
 
@@ -30,7 +30,7 @@ Our Areas of Renovation Expertise:
 - Restoring architectural details in historic Peoplestown homes
 - Outdoor living areas, porches, and decks
 
-## Why Our Home Renovation Company is Trusted
+## Why Our Home Remodeling & Renovation Company is Trusted
 
 When selecting a **home remodeling company,** homeowners look for reliability and skill. At NewSong Renovations, we deliver both, along with attention to detail and respect for history. As your home remodeler, we offer clear communication, craftsmanship, and a dedication to excellence.
 
@@ -63,7 +63,7 @@ This emphasis on realistic budgeting is one of the reasons homeowners continuall
 
 When your home is returned to you, it will feel like a new and improved version of the one you already enjoy. Every part of it will reflect quality, care, and consistency.
 
-## A Home Renovation Company with Peoplestown Expertise
+## A Home Remodeling & Renovation Company with Peoplestown Expertise
 
 Peoplestown's architectural landscape is diverse, from charming Craftsman cottages to Colonial Revival homes. We specialize in **home remodeling** projects that honor this heritage while enhancing functionality for modern families.
 

@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company West End Atlanta, GA"
+title: "Home Remodeling & Renovation Company West End Atlanta, GA"
 url: "/home-renovation-company-west-end-atlanta-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "West End"
 tagline: "Bring New Life to Your Home With Thoughtful Renovation Plans"
-description: "NewSong Renovations, the trusted home renovation company serving West End Atlanta, with over 20 yrs of expertise, making your dream a reality."
+description: "NewSong Renovations, the trusted home remodeling and renovation company serving West End Atlanta, with over 20 yrs of expertise, making your dream a reality."
 ---
 At **NewSong Renovations**, we see your home as more than a building, it is where your story unfolds. As a leading **home renovation company** serving **West End**, Atlanta, we focus on revamping underused or older rooms into environments that align with your lifestyle, priorities, and individuality.
 
@@ -30,7 +30,7 @@ Home Renovations We Offer:
 - Restoring original character in West End's historic homes
 - Outdoor decks and porches
 
-## Why Our Home Renovation Company Excels
+## Why Our Home Remodeling & Renovation Company Excels
 
 You have many choices when selecting a **home remodeling company,** but not all combine craftsmanship, honesty, and historical awareness as we do. At NewSong Renovations, we offer more than construction skills. As your dependable home remodeler, we bring creativity, reliability, and a promise of delivering results the right way.
 
@@ -63,7 +63,7 @@ This dedication to clear budgeting is one reason NewSong Renovations is trusted 
 
 When we return your keys, your home will feel refreshed while still being the place you love. Every detail will showcase our dedication to consistency, care, and craftsmanship.
 
-## A Home Renovation Company Anchored Serving West End
+## A Home Remodeling & Renovation Company Anchored Serving West End
 
 From Craftsman bungalows to Colonial Revival homes, West End's neighborhoods carry a distinct architectural character. We specialize in **home remodeling** projects that celebrate this heritage while modernizing homes for today's lifestyles.
 

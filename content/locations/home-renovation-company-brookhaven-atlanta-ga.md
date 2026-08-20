@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Brookhaven, GA"
+title: "Home Remodeling & Renovation Company Brookhaven, GA"
 url: "/home-renovation-company-brookhaven-atlanta-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Brookhaven"
 tagline: "Tailored Renovation Solutions for Lasting Impact"
-description: "NewSong Renovations, the best home renovation company serving Brookhaven, Atlanta, brings over 20 yrs of expertise, making your dream a reality."
+description: "NewSong Renovations, the best home remodeling and renovation company serving Brookhaven, Atlanta, brings over 20 yrs of expertise, making your dream a reality."
 ---
 At **NewSong Renovations**, we believe a home should reflect the people who live in it. It is more than a structure, it is a setting for daily life and long term comfort. As a **home renovation company** serving **Brookhaven,** we focus on transforming spaces that feel outdated or underused into areas that better support your lifestyle and personal vision.
 
@@ -30,7 +30,7 @@ Areas Commonly Included in Our Renovation Work:
 - Historic detail restoration for older homes in Brookhaven's legacy neighborhoods
 - Porches and deck spaces
 
-## What Sets Our Home Renovation Company Apart
+## What Sets Our Home Remodeling & Renovation Company Apart
 
 Homeowners have many options when selecting a **home remodeling company**, but not all prioritize clarity, craftsmanship, and thoughtful execution. At NewSong Renovations, we approach each project with care and consistency. As your dedicated home remodeler, we focus on dependable communication and a process built around long term results.
 
@@ -63,7 +63,7 @@ This honest approach to budgeting sets NewSong Renovations apart from many other
 
 When construction is complete, your home feels updated and cohesive while still feeling like home. The finished result reflects consistent quality, thoughtful execution, and careful attention across every area.
 
-## A Home Renovation Company Rooted in Brookhaven
+## A Home Remodeling & Renovation Company Rooted in Brookhaven
 
 Brookhaven's architectural landscape includes everything from Craftsman homes to Colonial Revival designs. Our **home remodeling** experience focuses on honoring that legacy while making homes more functional for today's needs. Each project is shaped with respect for existing character and an eye toward livability.
 

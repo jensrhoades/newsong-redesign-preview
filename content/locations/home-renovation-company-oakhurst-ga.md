@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Oakhurst, GA"
+title: "Home Remodeling & Renovation Company Oakhurst, GA"
 url: "/home-renovation-company-oakhurst-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Oakhurst"
 tagline: "Creative Renovation Services That Inspire New Possibilities"
-description: "NewSong Renovations, the trusted home renovation company serving Oakhurst, brings over 20 yrs of expertise, making your dream a reality."
+description: "NewSong Renovations, the trusted home remodeling and renovation company serving Oakhurst, brings over 20 yrs of expertise, making your dream a reality."
 ---
 At **NewSong Renovations**, we appreciate that your home is central to your experiences. As an established **home renovation company** serving **Oakhurst, Decatur, Atlanta, GA,** our work transforms older layouts or overlooked rooms into spaces that embrace your personality, values, and way of living.
 
@@ -30,7 +30,7 @@ Areas of the Home We Renovate:
 - Preservation and restoration of historic features in Oakhurst, Decatur, Atlanta, GA neighborhoods
 - Outdoor decks, porches, and relaxing gathering spots
 
-## What Makes Our Home Renovation Company Trusted
+## What Makes Our Home Remodeling & Renovation Company Trusted
 
 Hiring a home remodeling company provides many options, yet few deliver our unique combination of craftsmanship, honesty, and sensitivity to historic properties. At NewSong Renovations, we do more than build. As your home remodeler, we offer vision, reliability, and a dedication to lasting quality.
 
@@ -63,7 +63,7 @@ This commitment to realistic budgeting is one of the main reasons homeowners con
 
 When your project is complete, your home will feel renewed while still being the place you love. Each space reflects care, precision, and craftsmanship.
 
-## A Home Renovation Company Committed to Oakhurst, Decatur, GA
+## A Home Remodeling & Renovation Company Committed to Oakhurst, Decatur, GA
 
 Oakhurst, Decatur, Atlanta, GA's homes tell a story, from Craftsman bungalows to Colonial Revival designs. We specialize in remodeling that respects these styles while making homes functional and comfortable for modern families.
 

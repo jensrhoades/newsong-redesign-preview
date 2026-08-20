@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Ansley Park, GA"
+title: "Home Remodeling & Renovation Company Ansley Park, GA"
 url: "/home-renovation-company-ansley-park-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Ansley Park"
 tagline: "Enhance Your Home With Customized Renovation Services"
-description: "NewSong Renovations, the leading home renovation company serving Ansley Park, brings over 20 yrs of expertise, turning your dream into reality."
+description: "NewSong Renovations, the leading home remodeling and renovation company serving Ansley Park, brings over 20 yrs of expertise, turning your dream into reality."
 ---
 At **NewSong Renovations**, we believe your house is more than a structure, it is where your life takes shape. As a respected **home renovation company** serving Ansley Park, we focus on transforming outdated or overlooked rooms into spaces that truly mirror your lifestyle, preferences, and character.
 
@@ -30,7 +30,7 @@ Spaces We Renovate:
 - Historic feature restorations for Ansley Park's older neighborhoods
 - Outdoor decks and porches
 
-## How Our Home Renovation Company Stands Out
+## How Our Home Remodeling & Renovation Company Stands Out
 
 Choosing a **home remodeling company** gives you options, but few offer the same mix of skill, honesty, and appreciation for historic design. At NewSong Renovations, we deliver more than just workmanship. As your dependable home remodeler, we bring vision, consistency, and a promise of high-quality results in every project.
 
@@ -63,7 +63,7 @@ This dedication to realistic budgeting is one reason homeowners consistently cho
 
 When we return the keys to you, your home will feel like a refreshed version of the one you already love. Every detail will show the same consistency, quality, and care we put into the entire renovation.
 
-## A Home Renovation Company Serving in Ansley Park
+## A Home Remodeling & Renovation Company Serving in Ansley Park
 
 From Craftsman-style homes to traditional Colonial Revivals, Ansley Park's neighborhoods are rich with architectural history. We focus on **home remodeling** projects that honor this legacy while adapting homes to meet the needs of modern living.
 

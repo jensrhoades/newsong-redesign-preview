@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Emory, GA"
+title: "Home Remodeling & Renovation Company Emory, GA"
 url: "/home-renovation-company-emory-atlanta-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Emory"
 tagline: "Renovation Solutions Built Around the Way You Live"
-description: "NewSong Renovations, the trusted home renovation company serving Emory, Atlanta, brings over 20 years of expertise, making your dream a reality."
+description: "NewSong Renovations, the trusted home remodeling and renovation company serving Emory, Atlanta, brings over 20 years of expertise, making your dream a reality."
 ---
 At **NewSong Renovations**, we recognize that your home plays a central role in everyday life. It is where routines develop, memories are made, and personal style comes through. As a **home renovation company** working throughout **Emory**, we focus on updating dated or overlooked areas and reshaping them into spaces that align more closely with how you live and what you value.
 
@@ -30,7 +30,7 @@ Spaces and Features We Renovate:
 - Historic detail restoration for older homes in Emory's legacy neighborhoods
 - Porches and deck spaces
 
-## What Makes Our Home Renovation Company Stand Out
+## What Makes Our Home Remodeling & Renovation Company Stand Out
 
 When choosing a **home remodeling company**, homeowners are often comparing more than just services. Few combine careful planning, clear communication, and sensitivity to historic design the way we do. At NewSong Renovations, we bring more than experience. As your dedicated home remodeler, we deliver consistency, accountability, and a commitment to doing the work properly.
 
@@ -63,7 +63,7 @@ This focus on realistic budgeting is a major reason homeowners continue to choos
 
 At the end of construction, your home feels renewed while still retaining its familiar character. Every space reflects consistent workmanship, careful coordination, and attention to detail from beginning to end.
 
-## A Home Renovation Company With Deep Emory Experience
+## A Home Remodeling & Renovation Company With Deep Emory Experience
 
 The Emory area's neighborhoods showcase a wide range of architectural styles, from Craftsman bungalows and Tudor cottages to stately Colonial Revival homes set along tree-lined streets. Our background in **home remodeling** allows us to respect this history while updating homes to better support modern living. Each renovation balances original features with thoughtful improvements.
 

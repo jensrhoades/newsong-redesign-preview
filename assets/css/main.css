@@ -296,6 +296,10 @@ footer a:hover{color:var(--yellow)}
 /* press & awards image */
 .awards-img{max-width:760px;margin:0 auto;border-radius:10px;overflow:hidden;box-shadow:0 16px 40px rgba(89,74,95,.14)}
 
+/* service-area grouped community chips */
+.area-group{margin-top:38px}
+.area-sub{color:var(--plum);font-size:1.25rem;margin-bottom:16px}
+
 /* service-area map */
 .mapband{background:var(--wash)}
 .mapembed{border-radius:10px;overflow:hidden;box-shadow:0 16px 40px rgba(89,74,95,.15);line-height:0}

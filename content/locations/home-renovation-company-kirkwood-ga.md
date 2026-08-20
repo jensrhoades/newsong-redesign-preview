@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Kirkwood, GA"
+title: "Home Remodeling & Renovation Company Kirkwood, GA"
 url: "/home-renovation-company-kirkwood-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Kirkwood"
 tagline: "Innovative Renovation Services Centered On You"
-description: "NewSong Renovations, the leading home renovation company serving Kirkwood, offers over 20 yrs of expertise turning your dream into a reality."
+description: "NewSong Renovations, the leading home remodeling and renovation company serving Kirkwood, offers over 20 yrs of expertise turning your dream into a reality."
 ---
 At **NewSong Renovations**, we understand your home is where comfort meets meaning. As a skilled **home renovation company** serving **Kirkwood**, Atlanta, we focus on turning worn or neglected spaces into rooms that capture your lifestyle, choices, and individuality.
 
@@ -30,7 +30,7 @@ Areas of the Home We Renovate:
 - Restoring architectural character in Kirkwood, Atlanta's historic homes
 - Porches, decks, and outdoor living expansions
 
-## Why Our Home Renovation Company Excels
+## Why Our Home Remodeling & Renovation Company Excels
 
 There are many choices when hiring a **home remodeling company**, but few offer our level of craftsmanship, honesty, and historic design knowledge. At NewSong Renovations, we provide more than services. As your home remodeler, we bring trust, creativity, and a dedication to excellence.
 
@@ -63,7 +63,7 @@ This dedication to realistic budgeting is why so many homeowners trust NewSong R
 
 At handover, your home feels like a refreshed version of the one you already value. Every space reflects precision, care, and consistent quality.
 
-## A Home Renovation Company Serving Kirkwood, Atlanta Communities
+## A Home Remodeling & Renovation Company Serving Kirkwood, Atlanta Communities
 
 Kirkwood, Atlanta is home to a wide variety of architecture, from classic Craftsman bungalows to Colonial Revival residences. We take pride in remodeling projects that respect this history while enhancing livability for today's families.
 

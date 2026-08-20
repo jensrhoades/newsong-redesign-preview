@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company East Lake, GA"
+title: "Home Remodeling & Renovation Company East Lake, GA"
 url: "/home-renovation-company-east-lake-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "East Lake"
 tagline: "Discover the Potential of Your Home With Expert Renovations"
-description: "NewSong Renovations, the best home renovation company serving East Lake, Atlanta, brings over 20 yrs of expertise, making your dream a reality."
+description: "NewSong Renovations, the best home remodeling and renovation company serving East Lake, Atlanta, brings over 20 yrs of expertise, making your dream a reality."
 ---
 At **NewSong Renovations**, we believe that your home should reflect your life and personality. As a trusted **home renovation company** serving **East Lake,** we specialize in refreshing outdated or neglected areas and turning them into spaces that better suit your lifestyle.
 
@@ -30,7 +30,7 @@ Renovation Projects We Complete:
 - Historic preservation for East Lake's classic homes
 - Outdoor spaces including porches and decks
 
-## Why Our Home Renovation Company is Preferred
+## Why Our Home Remodeling & Renovation Company is Preferred
 
 When searching for a **home remodeling company**, homeowners want a balance of craftsmanship, honesty, and design sensitivity. At NewSong Renovations, we provide that balance. As your home remodeler, we combine creativity with accountability to deliver projects completed the right way.
 
@@ -63,7 +63,7 @@ This focus on realistic planning explains why so many homeowners choose NewSong 
 
 When the project ends and your keys are returned, your home will feel like a renewed version of the space you already love. Each room will show quality, attention, and care.
 
-## A Home Renovation Company Strongly Tied to East Lake
+## A Home Remodeling & Renovation Company Strongly Tied to East Lake
 
 East Lake offers a wide architectural mix, from Craftsman bungalows to stately Colonial Revivals. We focus on **home remodeling** projects that protect this history while providing comfort and modern function for families today.
 

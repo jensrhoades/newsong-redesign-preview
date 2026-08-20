@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Candler Park, GA"
+title: "Home Remodeling & Renovation Company Candler Park, GA"
 url: "/home-renovation-company-candler-park-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Candler Park"
 tagline: "Redefine Your Living Space With Expert Renovations"
-description: "NewSong Renovations, the leading home renovation company serving Candler Park, brings over 20 yrs of expertise, turning your dream into reality."
+description: "NewSong Renovations, the leading home remodeling and renovation company serving Candler Park, brings over 20 yrs of expertise, turning your dream into reality."
 ---
 At **NewSong Renovations**, we understand your home is where meaningful moments happen. As a dedicated **home renovation company** serving **Candler Park, Atlanta, GA**, we take pride in converting outdated layouts or overlooked corners into purposeful spaces that express your vision, taste, and lifestyle.
 
@@ -30,7 +30,7 @@ Renovation Projects We Handle:
 - Careful restoration of historic details in Candler Park, Atlanta, GA's older neighborhoods
 - Outdoor decks, porches, and gathering spaces
 
-## What Makes Our Home Renovation Company Stand Out
+## What Makes Our Home Remodeling & Renovation Company Stand Out
 
 With many options for hiring a **home remodeling company**, few deliver our mix of craftsmanship, honesty, and knowledge of historic homes. At **NewSong Renovations**, we offer more than construction. As your dependable home remodeler, we bring vision, trust, and a commitment to delivering quality.
 
@@ -63,7 +63,7 @@ This attention to accurate budgeting is one of the main reasons homeowners rely 
 
 When we hand back your keys, your house will feel like a refreshed version of what you already cherish. Every space will reflect consistency, detail, and craftsmanship.
 
-## A Home Renovation Company Serving Candler Park Families
+## A Home Remodeling & Renovation Company Serving Candler Park Families
 
 Candler Park, Atlanta, GA's architecture spans from timeless Craftsman homes to grand Colonial Revivals. We specialize in home remodeling projects that celebrate this history while updating homes for modern living.
 

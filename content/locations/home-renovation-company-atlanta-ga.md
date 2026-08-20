@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Atlanta, GA"
+title: "Home Remodeling & Renovation Company Atlanta, GA"
 url: "/home-renovation-company-atlanta-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Atlanta"
 tagline: "Elevate Your Home With Tailored Renovation Solutions"
-description: "NewSong Renovations, the leading home renovation company serving Atlanta, brings over 20 years of expertise, turning your dream into reality."
+description: "NewSong Renovations, the leading home remodeling and renovation company serving Atlanta, brings over 20 years of expertise, turning your dream into reality."
 ---
 At **NewSong Renovations**, we know your home isn't just a place to live, it's where your life unfolds. As a leading **home renovation company** in **Atlanta**, we specialize in transforming outdated or underused spaces into inspired environments that better reflect your lifestyle, priorities, and personality.
 
@@ -63,7 +63,7 @@ This emphasis on realistic budgeting is one of the reasons so many homeowners tr
 
 When we hand you back your keys, your home will feel like a brand-new version of the one you already love. Every corner will reflect quality, consistency, and care.
 
-## A Home Renovation Company with Deep Atlanta Roots
+## A Home Remodeling & Renovation Company with Deep Atlanta Roots
 
 From classic Craftsman bungalows to stately Colonial Revivals, Atlanta has a rich architectural history. We specialize in **home remodeling** projects that respect that legacy while making homes more livable and functional for today's families.
 

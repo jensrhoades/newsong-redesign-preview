@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Virginia-Highland, GA"
+title: "Home Remodeling & Renovation Company Virginia-Highland, GA"
 url: "/home-renovation-company-virginia-highland-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Virginia-Highland"
 tagline: "Personalize Your Space With Unique Renovation Services"
-description: "NewSong Renovations, the trusted home renovation company serving Virginia-Highland, with over 20 yrs of expertise, making your dream a reality."
+description: "NewSong Renovations, the trusted home remodeling and renovation company serving Virginia-Highland, with over 20 yrs of expertise, making your dream a reality."
 ---
 At **NewSong Renovations,** we view your home as more than four walls, it's the backdrop to your life. As a respected **home renovation company** serving **Virginia-Highland**, we excel in refreshing old or neglected areas and turning them into spaces that better express who you are.
 
@@ -30,7 +30,7 @@ Types of Renovations We Offer:
 - Preservation of historic details in Virginia-Highland neighborhoods
 - Decks and porches
 
-## Why Our Home Renovation Company Leads the Way
+## Why Our Home Remodeling & Renovation Company Leads the Way
 
 When choosing a **home remodeling company**, options are plentiful, but few bring together honesty, skill, and historical expertise like we do. At NewSong Renovations, we offer more than just tools. As your committed home remodeler, we bring thoughtful design, reliability, and a dedication to quality.
 
@@ -63,7 +63,7 @@ This dedication to accurate budgeting is a reason why homeowners turn to NewSong
 
 When we return your keys, your home will feel like an improved version of the place you already love. Every detail will reflect the same commitment to care, quality, and consistency.
 
-## A Home Renovation Company with Strong Virginia-Highland Ties
+## A Home Remodeling & Renovation Company with Strong Virginia-Highland Ties
 
 From distinctive Craftsman houses to classic Colonial Revivals, Virginia-Highland's architectural heritage is rich and varied. We specialize in **home remodeling** projects that preserve this character while updating homes for modern living.
 

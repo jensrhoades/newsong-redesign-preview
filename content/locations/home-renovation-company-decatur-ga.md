@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Decatur, GA"
+title: "Home Remodeling & Renovation Company Decatur, GA"
 url: "/home-renovation-company-decatur-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Decatur"
 tagline: "Transform Your Home With Custom Renovation Services"
-description: "NewSong Renovations, the leading home renovation company serving Decatur, offers over 20 yrs of expertise turning your dream into a reality."
+description: "NewSong Renovations, the leading home remodeling and renovation company serving Decatur, offers over 20 yrs of expertise turning your dream into a reality."
 ---
 At **NewSong Renovations**, we believe your home is more than four walls, it's the backdrop to your story. As a trusted **home renovation company** serving **Decatur**, we focus on turning tired or limited areas into vibrant spaces that highlight your lifestyle, values, and individuality.
 
@@ -30,7 +30,7 @@ Areas of the Home We Renovate:
 - Restoring period details for Decatur's historic neighborhood homes
 - Decks, porches, and outdoor living additions
 
-## What Distinguishes Our Home Renovation Company
+## What Distinguishes Our Home Remodeling & Renovation Company
 
 When you look for a **home remodeling company**, you'll find many options, but few combine transparency, skill, and respect for historic architecture the way we do. At NewSong Renovations, we deliver more than construction. As your trusted home remodeler, we provide vision, dependability, and a commitment to lasting quality.
 
@@ -63,7 +63,7 @@ This focus on realistic budgeting is one of the reasons so many homeowners conti
 
 When the project is complete and the keys are returned, your house feels renewed while still reflecting the home you love. Every space is completed with consistency, precision, and attention to detail.
 
-## A Home Renovation Company Proudly Serving Decatur
+## A Home Remodeling & Renovation Company Proudly Serving Decatur
 
 Decatur's homes range from Craftsman bungalows to Colonial Revivals, each with its own unique character. We specialize in home remodeling projects that preserve this architectural heritage while updating homes to suit the needs of modern living.
 

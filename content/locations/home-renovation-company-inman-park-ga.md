@@ -1,12 +1,12 @@
 ---
-title: "Home Renovation Company Inman Park, GA"
+title: "Home Remodeling & Renovation Company Inman Park, GA"
 url: "/home-renovation-company-inman-park-ga/"
 layout: location
 service: home
 family: "home-renovation-company"
 city: "Inman Park"
 tagline: "Renovation Solutions Designed To Fit Your Lifestyle"
-description: "NewSong Renovations, the leading home renovation company serving Inman Park, offers over 20 yrs of expertise turning your dream into a reality."
+description: "NewSong Renovations, the leading home remodeling and renovation company serving Inman Park, offers over 20 yrs of expertise turning your dream into a reality."
 ---
 At **NewSong Renovations**, we recognize that your home is the heart of your everyday life. As an experienced **home renovation company** serving **Inman Park, Atlanta, GA**, we excel in reshaping dated and underutilized areas into welcoming spaces that match your needs, priorities, and style.
 
@@ -30,7 +30,7 @@ Areas of the Home We Renovate:
 - Preservation and restoration of historic character in Inman Park, Atlanta, GA homes
 - Outdoor porches, decks, and gathering areas
 
-## Why Our Home Renovation Company Excels
+## Why Our Home Remodeling & Renovation Company Excels
 
 When hiring a **home remodeling company**, options are many, but few offer the same level of skill, integrity, and sensitivity to historic details. At NewSong Renovations, we deliver more than tools and labor. As your home remodeler, we provide steady guidance, reliability, and an unwavering commitment to excellence.
 
@@ -63,7 +63,7 @@ This dedication to realistic budgeting is one of the key reasons homeowners cont
 
 When the project is finished, your home will feel renewed while still reflecting the place you love. Every feature will show quality workmanship, care, and consistency.
 
-## A Home Renovation Company Proudly Serving Inman Park
+## A Home Remodeling & Renovation Company Proudly Serving Inman Park
 
 From Craftsman homes to Colonial Revival residences, Inman Park, Atlanta, GA offers a wide range of architectural styles. We specialize in home remodeling that respects this legacy while tailoring homes to meet the demands of today's families.
 
