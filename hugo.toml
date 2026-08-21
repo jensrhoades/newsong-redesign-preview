@@ -17,7 +17,7 @@ disableKinds = ["taxonomy", "term"]
   addressLine1 = "641 Schuyler Ave SE"
   addressLine2 = "Atlanta, GA 30312"
   mapLink = "https://maps.app.goo.gl/3jYJwjikA7SXDY536"
-  rating = "130+ Google reviews"
+  rating = "5-Star Rated"   # truthful; do not claim a review count we can't back up
   serviceArea = "Serving Intown Atlanta & the North Georgia Mountains"
 
   # Social profiles (used in header/footer/contact).

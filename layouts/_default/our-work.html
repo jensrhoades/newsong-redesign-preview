@@ -24,7 +24,7 @@
 <section class="gal{{ if modBool $i 2 }} arch-fade{{ end }}" id="{{ $cat.prefix }}">
   <div class="wrap">
     <span class="kicker">Recent Work</span>
-    <h2>{{ $cat.name }}</h2>
+    <h2>{{ $cat.name }} <a class="learn-more" href="{{ (printf "service/%s/" $cat.prefix) | relURL }}">Learn more →</a></h2>
     <div class="gg">
       {{ range seq 1 $cat.count }}
       <a href="{{ (printf "images/newsong-our-work-%s-%d.jpg" $cat.prefix .) | relURL }}" target="_blank" rel="noopener"><img src="{{ (printf "images/newsong-our-work-%s-%d.jpg" $cat.prefix .) | relURL }}" alt="{{ $cat.name }} project by NewSong Renovations" loading="lazy"></a>

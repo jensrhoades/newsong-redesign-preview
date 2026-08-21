@@ -1,13 +1,5 @@
 {{ $home := site.Home.RelPermalink }}
-<div class="topbar">
-  <div class="wrap">
-    <div class="tb-left"><span class="star">★</span> {{ .Site.Params.serviceArea }}</div>
-    <div class="tb-right">
-      <span><span class="star">★★★★★</span> {{ .Site.Params.rating }}</span>
-      <a href="tel:{{ .Site.Params.phoneHref }}">{{ .Site.Params.phone }}</a>
-    </div>
-  </div>
-</div>
+<div class="topstripe" aria-hidden="true"></div>
 
 <header>
   <div class="wrap nav">

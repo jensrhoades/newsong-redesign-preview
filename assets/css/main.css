@@ -50,12 +50,8 @@ img{display:block;max-width:100%}
 .btn-outline-plum{border-color:var(--plum);color:var(--plum)}
 .btn-outline-plum:hover{background:var(--plum);color:#fff}
 
-/* top bar */
-.topbar{background:var(--plum-deep);color:rgba(255,255,255,.85);font-size:.85rem}
-.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:38px}
-.topbar a{color:rgba(255,255,255,.85)}
-.topbar .tb-right{display:flex;gap:1.4rem;align-items:center}
-.topbar .star{color:var(--yellow)}
+/* thin accent stripe across the very top */
+.topstripe{height:6px;background:var(--plum-dark)}
 
 /* header */
 header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 12px rgba(89,74,95,.08)}
@@ -219,7 +215,7 @@ footer a:hover{color:var(--yellow)}
 .fbot{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:22px;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
 
 /* real logo */
-.brand img{height:38px;width:auto;display:block}
+.brand img{height:52px;width:auto;display:block}
 .fbrand img{height:34px;width:auto;display:block}
 
 /* architectural-drawing fade on white sections (bg-26 asset).
@@ -235,7 +231,6 @@ footer a:hover{color:var(--yellow)}
 .switcher a.on{background:var(--yellow);color:var(--yellow-ink)}
 
 @media(max-width:900px){
-  .topbar .tb-left{display:none}
   .navlinks{display:none}
   .ql-grid{grid-template-columns:1fr 1fr}
   .page-home .intro .wrap,.page-service .intro .wrap,.faq .wrap{grid-template-columns:1fr;gap:32px}
@@ -299,6 +294,10 @@ footer a:hover{color:var(--yellow)}
 /* service-area grouped community chips */
 .area-group{margin-top:38px}
 .area-sub{color:var(--plum);font-size:1.25rem;margin-bottom:16px}
+
+/* "Learn more" link beside Our Work gallery headings */
+.learn-more{font-family:'Roboto',sans-serif;font-size:.9rem;font-weight:700;color:var(--magenta);vertical-align:middle;margin-left:.6rem;white-space:nowrap}
+.learn-more:hover{color:var(--plum)}
 
 /* service-area map */
 .mapband{background:var(--wash)}
