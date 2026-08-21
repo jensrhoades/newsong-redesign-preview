@@ -289,9 +289,6 @@ footer a:hover{color:var(--yellow)}
 .trole{display:block;margin:3px 22px 0;color:var(--magenta);font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}
 .tmember p{margin:12px 22px 22px;color:var(--muted);font-size:.9rem}
 
-/* press & awards image */
-.awards-img{max-width:760px;margin:0 auto;border-radius:10px;overflow:hidden;box-shadow:0 16px 40px rgba(89,74,95,.14)}
-
 /* service-area grouped community chips */
 .area-group{margin-top:38px}
 .area-sub{color:var(--plum);font-size:1.25rem;margin-bottom:16px}
