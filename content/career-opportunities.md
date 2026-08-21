@@ -1,6 +1,6 @@
 ---
 title: "Career Opportunities"
-layout: page
+layout: prose
 kicker: "Join Our Team"
 lead: "Looking for a career in home renovations? Let's talk."
 description: "NewSong Renovations is always looking to build relationships with quality contractors and tradespeople in Atlanta. Get in touch about joining our team."

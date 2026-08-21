@@ -80,16 +80,45 @@
 </section>
 {{ end }}
 
-<!-- AREAS -->
+<!-- AREAS WE SERVE -->
+{{ $svc := .File.ContentBaseName }}
+{{ $all := where site.RegularPages "Params.service" $svc }}
+{{ if $all }}
+{{ $intown := where $all "Params.family" "in" (slice "kitchen-renovation-company" "bathroom-remodeling-company" "whole-home-remodeling-company" "home-renovation-company") }}
+{{ $mtn := where $all "Params.family" "in" (slice "kitchen-remodel" "bathroom-remodel" "basement-remodel" "home-remodeling") }}
 <section class="areas">
-  <div class="wrap">
+  <div class="wrap center">
+    <span class="kicker">Areas We Serve</span>
+    <h2>{{ .Params.areasHeading | default "Serving intown Atlanta." }}</h2>
+    {{ with $intown }}
+    <div class="area-group">
+      <h3 class="area-sub">Intown Atlanta</h3>
+      <div class="chips" style="justify-content:center">
+        {{ range sort . "Params.city" }}<a class="chip" href="{{ .RelPermalink }}">{{ .Params.city }}</a>{{ end }}
+      </div>
+    </div>
+    {{ end }}
+    {{ with $mtn }}
+    <div class="area-group">
+      <h3 class="area-sub">North Georgia Mountains</h3>
+      <div class="chips" style="justify-content:center">
+        {{ range sort . "Params.city" }}<a class="chip" href="{{ .RelPermalink }}">{{ .Params.city }}</a>{{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ else }}
+<section class="areas">
+  <div class="wrap center">
     <span class="kicker">Where We Work</span>
     <h2>{{ .Params.areasHeading | default "Serving intown Atlanta." }}</h2>
-    <div class="chips">
-      {{ range .Site.Params.neighborhoods }}<a class="chip" href="#">{{ . }}</a>{{ end }}
+    <div class="chips" style="justify-content:center">
+      {{ range site.Params.neighborhoods }}<span class="chip">{{ . }}</span>{{ end }}
     </div>
   </div>
 </section>
+{{ end }}
 
 <!-- CTA -->
 <section class="cta">

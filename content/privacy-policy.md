@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-layout: page
+layout: prose
 kicker: "Legal"
 description: "NewSong Renovations' privacy policy — how we collect, use, and protect information you provide through newsongatl.com."
 ---
